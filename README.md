@@ -27,8 +27,13 @@ Each clause ends with a 0.
 The header line starts with p cnf followed by the number of variables and clauses.
 
 Example of CNF file
+
 p cnf 3 4
+
 1 -3 2 0
+
 -1 2 3 0
+
 1 -2 -3 0
+
 -1 -2 3 0
