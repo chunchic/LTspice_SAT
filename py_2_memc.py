@@ -8,7 +8,7 @@ Created on Thu Jun  6 10:56:50 2024
 
 
 # Path to the CNF file
-input_file = 'uf20-08.cnf'
+input_file = 'problem.cnf'
 
 # Initialize a list to hold all clauses
 clauses = []
