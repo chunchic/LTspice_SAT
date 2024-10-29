@@ -6,6 +6,7 @@ Created on Thu Jun  6 10:56:50 2024
 @author: chunchic
 """
 
+import sys
 
 # Path to the CNF file
 input_file = 'problem.cnf'
@@ -37,13 +38,13 @@ clauses = [clause for clause in clauses if clause]
 # Headers
 lines = []
 lines.append("* parameters\n");
-lines.append(".param alpha=5.000000 beta=20.000000 gamma=0.250000 delta=0.050000 epsilon=0.001000 xi=0.010000 xlmax=910000\n")
+lines.append(f".param alpha=5.000000 beta=20.000000 gamma=0.250000 delta=0.050000 epsilon=0.001000 xi=0.010000 xlmax={len(clauses)*10000}\n")
 lines.append("\n")
-lines.append("* Measurement circuit\n")
-lines.append("ESAT1 meas1 0 value={fsat1()}\n")
-lines.append("RSAT1 meas1 0 100meg\n")
-lines.append("ESAT2 meas2 0 value={fsat2()}\n")
-lines.append("RSAT2 meas2 0 100meg\n")
+lines.append("* Control circuit\n")
+lines.append("ESAT1 contra 0 value={fsat1()}\n")
+lines.append("RSAT1 contra 0 100meg\n")
+lines.append("ESAT2 contrd 0 value={fsat2()}\n")
+lines.append("RSAT2 contrd 0 100meg\n")
 lines.append("\n")
 
 # Initializing main variables
@@ -57,8 +58,8 @@ lines.append("\n")
 # Initializing short memory variables
 lines.append("* Short memory variables\n")
 for i in range(1,n_clause+1):
-    lines.append(f"Cs{i} xs{i} 0 1 IC={{epsilon}}\n")
-    lines.append(f"Gs{i} 0 xs{i} value={{fs{i}()*(u(1-epsilon-V(xs{i}))*u(fs{i}())+u(V(xs{i})-epsilon)*u(-fs{i}()))}}\n")
+    lines.append(f"Cs{i} xs{i} 0 1 IC={{0.5}}\n")
+    lines.append(f"Gs{i} 0 xs{i} value={{fs{i}()*(u(1-V(xs{i}))*u(fs{i}())+u(V(xs{i}))*u(-fs{i}()))}}\n")
     lines.append(f"Rs{i} xs{i} 0 100meg\n")
 lines.append("\n")
 
@@ -77,8 +78,8 @@ lines.append(".func Cm1(x,y,z)={min(1-u(x),min(1-u(y),1-u(z)))}\n")
 lines.append("\n")
 
 # Sum of clauses
-fsat1_line = ".funct fsat1()="
-fsat2_line = ".funct fsat2()="
+fsat1_line = ".func fsat1()="
+fsat2_line = ".func fsat2()="
 for i in range(n_clause):
     fsat1_line += "Cm("
     fsat2_line += "Cm1("
@@ -105,7 +106,8 @@ lines.append("\n")
 
 # Grad v
 abs_clauses = [[abs(i) for i in clause] for clause in clauses]
-for i in range(n):
+
+for i in range(69,71):
     # Finding all clauses where variable i appears
     tmp = []
     for j_index, clause in enumerate(abs_clauses):
@@ -117,6 +119,10 @@ for i in range(n):
     for j in tmp:
         # the other two variables in clause
         tmp2 = [k for k in clauses[j] if k != i+1 and k != -(i+1)]
+        
+        if len(tmp2) < 2:
+            sys.exit("ERROR")
+        
         # lines for G
         if tmp2[0] >= 0:
             G1_line = f"1-V(v{abs(tmp2[0])})"
@@ -166,7 +172,7 @@ lines.append("\n")
 # run transient sim
 lines.append(".tran 0 300.000000 1u uic\n")
 lines.append("\n")
-probe_line = ".probe V(meas1) V(meas2)"
+probe_line = ".probe V(contra) V(contrd)"
 for i in range(n):
     probe_line += f" V(v{i+1})"
 lines.append(probe_line)
