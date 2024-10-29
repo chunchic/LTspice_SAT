@@ -37,11 +37,11 @@ clauses = [clause for clause in clauses if clause]
 # Generating netlist file
 # Headers
 lines = []
-lines.append("* Measurement circuit\n")
-lines.append("ESAT1 meas1 0 value={fsat1()}\n")
-lines.append("RSAT1 meas1 0 100meg\n")
-lines.append("ESAT2 meas2 0 value={fsat2()}\n")
-lines.append("RSAT2 meas2 0 100meg\n")
+lines.append("* Control circuit\n")
+lines.append("ESAT1 contra 0 value={fsat1()}\n")
+lines.append("RSAT1 contra 0 100meg\n")
+lines.append("ESAT2 contrd 0 value={fsat2()}\n")
+lines.append("RSAT2 contrd 0 100meg\n")
 lines.append("\n")
 
 # Initializing main variables
@@ -67,8 +67,8 @@ lines.append(".func Cm1(x,y,z)={min(1-u(x),min(1-u(y),1-u(z)))}\n")
 lines.append("\n")
 
 # Sum of clauses
-fsat1_line = ".funct fsat1()="
-fsat2_line = ".funct fsat2()="
+fsat1_line = ".func fsat1()="
+fsat2_line = ".func fsat2()="
 for i in range(n_clause):
     fsat1_line += "Cm("
     fsat2_line += "Cm1("
@@ -149,7 +149,7 @@ lines.append("\n")
 # run transient sim
 lines.append(".tran 0 300.000000 1u uic\n")
 lines.append("\n")
-probe_line = ".probe V(meas1) V(meas2) V(meas3)"
+probe_line = ".probe V(contra) V(contrd)"
 for i in range(n):
     probe_line += f" V(s{i+1})"
 lines.append(probe_line)
@@ -158,4 +158,3 @@ lines.append(probe_line)
 output_file = input_file + '.py.analogSAT.net'
 with open(output_file, 'w') as file2:
     file2.writelines(lines)
-
