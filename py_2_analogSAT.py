@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jun  6 10:56:50 2024
+Modified on Thu Nov  14
 
 @author: chunchic
 """
@@ -34,9 +35,10 @@ with open(input_file, 'r') as file1:
 # Removing any empty clauses if input file has empty lines
 clauses = [clause for clause in clauses if clause]
 
-# Generating netlist file
-# Headers
+# Generating netlist
 lines = []
+
+# Defining control circuitry
 lines.append("* Control circuit\n")
 lines.append("ESAT1 contra 0 value={fsat1()}\n")
 lines.append("RSAT1 contra 0 100meg\n")
@@ -44,7 +46,7 @@ lines.append("ESAT2 contrd 0 value={fsat2()}\n")
 lines.append("RSAT2 contrd 0 100meg\n")
 lines.append("\n")
 
-# Initializing main variables
+# Integrators for the main variables
 lines.append("* Main variables\n")
 for i in range(1,n+1):
     lines.append(f"Cs{i} s{i} 0 1 IC={{-1+mc(1,1)}}\n")
@@ -52,7 +54,7 @@ for i in range(1,n+1):
     lines.append(f"Rs{i} s{i} 0 100meg\n")   
 lines.append("\n")          
     
-# Initializing memory variables
+# Integrators for the auxiliary variables
 lines.append("* Memory variables\n")
 for i in range(1,n_clause+1):
     lines.append(f"Ca{i} a{i} 0 1 IC={{1}}\n")
@@ -60,7 +62,7 @@ for i in range(1,n_clause+1):
     lines.append(f"Ra{i} a{i} 0 100meg\n")
 lines.append("\n")
 
-# Clause function
+# Clause functions
 lines.append("* functions\n")
 lines.append(".func Cm(x,y,z)={0.5*min(1-x,min(1-y,1-z))}\n")
 lines.append(".func Cm1(x,y,z)={min(1-u(x),min(1-u(y),1-u(z)))}\n")
@@ -93,7 +95,7 @@ lines.append("\n")
 lines.append(fsat2_line)
 lines.append("\n")  
 
-# Grad s
+# Evolution functions for the main variables
 abs_clauses = [[abs(i) for i in clause] for clause in clauses]
 for i in range(n):
     # Finding all clauses where variable i appears
@@ -102,7 +104,7 @@ for i in range(n):
         if i+1 in clause:
             tmp.append(j_index)
     
-    # Generating string of grad v equation
+    # Generating the evolution function
     fs_line = f".func fs{i+1}() = {{"
     for j in tmp:
         # the other two variables in clause
@@ -131,7 +133,7 @@ for i in range(n):
     lines.append(fs_line)
 lines.append("\n")
 
-# grad a
+# Evolution functions for the auxiliary variables
 for i in range(n_clause):
     # checking negations
     s_sign = []
@@ -146,7 +148,7 @@ for i in range(n_clause):
 lines.append("\n")
 lines.append("\n")
 
-# run transient sim
+# Transient simulation command
 lines.append(".tran 0 300.000000 1u uic\n")
 lines.append("\n")
 probe_line = ".probe V(contra) V(contrd)"
@@ -154,7 +156,7 @@ for i in range(n):
     probe_line += f" V(s{i+1})"
 lines.append(probe_line)
 
-# Output file
+# Saving the netlist
 output_file = input_file + '.py.analogSAT.net'
 with open(output_file, 'w') as file2:
     file2.writelines(lines)
