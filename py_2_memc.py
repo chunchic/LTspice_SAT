@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jun  6 10:56:50 2024
+Modified on Thu Nov  15
 
 @author: chunchic
 """
 
-import sys
 
 # Path to the CNF file
 input_file = 'problem.cnf'
@@ -34,12 +34,13 @@ with open(input_file, 'r') as file1:
 # Removing any empty clauses if input file has empty lines
 clauses = [clause for clause in clauses if clause]
 
-# Generating netlist file
-# Headers
+# Generating netlist
 lines = []
 lines.append("* parameters\n");
-lines.append(f".param alpha=5.000000 beta=20.000000 gamma=0.250000 delta=0.050000 epsilon=0.001000 xi=0.010000 xlmax={len(clauses)*10000}\n")
+lines.append(".param alpha=5.000000 beta=20.000000 gamma=0.250000 delta=0.050000 epsilon=0.001000 xi=0.010000 xlmax={len(clauses)*10000}\n")
 lines.append("\n")
+
+# Defining control circuitry
 lines.append("* Control circuit\n")
 lines.append("ESAT1 contra 0 value={fsat1()}\n")
 lines.append("RSAT1 contra 0 100meg\n")
@@ -47,7 +48,7 @@ lines.append("ESAT2 contrd 0 value={fsat2()}\n")
 lines.append("RSAT2 contrd 0 100meg\n")
 lines.append("\n")
 
-# Initializing main variables
+# Integrators for the main variables
 lines.append("* Main variables\n")
 for i in range(1,n+1):
     lines.append(f"Cv{i} v{i} 0 1 IC={{-1+mc(1,1)}}\n")
@@ -55,7 +56,7 @@ for i in range(1,n+1):
     lines.append(f"Rv{i} v{i} 0 100meg\n")   
 lines.append("\n")          
     
-# Initializing short memory variables
+# Integrators for the short memory variables
 lines.append("* Short memory variables\n")
 for i in range(1,n_clause+1):
     lines.append(f"Cs{i} xs{i} 0 1 IC={{0.5}}\n")
@@ -63,7 +64,7 @@ for i in range(1,n_clause+1):
     lines.append(f"Rs{i} xs{i} 0 100meg\n")
 lines.append("\n")
 
-# Initializing long memory variables
+# Integrators for the long memory variables
 lines.append("* Long memory variables\n")
 for i in range(1,n_clause+1):
     lines.append(f"Cl{i} xl{i} 0 1 IC={{1}}\n")
@@ -71,7 +72,7 @@ for i in range(1,n_clause+1):
     lines.append(f"Rl{i} xl{i} 0 100meg\n")
 lines.append("\n")
 
-# Clause function
+# Clause functions
 lines.append("* functions\n")
 lines.append(".func Cm(x,y,z)={0.5*min(1-x,min(1-y,1-z))}\n")
 lines.append(".func Cm1(x,y,z)={min(1-u(x),min(1-u(y),1-u(z)))}\n")
@@ -104,25 +105,20 @@ lines.append("\n")
 lines.append(fsat2_line)
 lines.append("\n")  
 
-# Grad v
+# Evolution functions for the main variables
 abs_clauses = [[abs(i) for i in clause] for clause in clauses]
-
-for i in range(69,71):
+for i in range(n):
     # Finding all clauses where variable i appears
     tmp = []
     for j_index, clause in enumerate(abs_clauses):
         if i+1 in clause:
             tmp.append(j_index)
     
-    # Generating string of grad v equation
+    # Generating the evolution function
     fv_line = f".func fv{i+1}() = {{"
     for j in tmp:
         # the other two variables in clause
         tmp2 = [k for k in clauses[j] if k != i+1 and k != -(i+1)]
-        
-        if len(tmp2) < 2:
-            sys.exit("ERROR")
-        
         # lines for G
         if tmp2[0] >= 0:
             G1_line = f"1-V(v{abs(tmp2[0])})"
@@ -151,7 +147,7 @@ for i in range(69,71):
     lines.append(fv_line)
 lines.append("\n")
 
-# grad xs and xl
+# Evolution functions for the short and long memory variables
 tmp_lines = []
 for i in range(n_clause):
     # checking negations
@@ -169,7 +165,7 @@ lines.append("\n")
 lines.extend(tmp_lines)
 lines.append("\n")
 
-# run transient sim
+# Transient simulation command
 lines.append(".tran 0 300.000000 1u uic\n")
 lines.append("\n")
 probe_line = ".probe V(contra) V(contrd)"
@@ -177,7 +173,7 @@ for i in range(n):
     probe_line += f" V(v{i+1})"
 lines.append(probe_line)
 
-# Output file
+# Saving the netlist
 output_file = input_file + '.py.memc.net'
 with open(output_file, 'w') as file2:
     file2.writelines(lines)
