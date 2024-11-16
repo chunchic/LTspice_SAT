@@ -37,7 +37,7 @@ clauses = [clause for clause in clauses if clause]
 # Generating netlist
 lines = []
 lines.append("* parameters\n");
-lines.append(".param alpha=5.000000 beta=20.000000 gamma=0.250000 delta=0.050000 epsilon=0.001000 xi=0.010000 xlmax={len(clauses)*10000}\n")
+lines.append(f".param alpha=5.000000 beta=20.000000 gamma=0.250000 delta=0.050000 epsilon=0.001000 xi=0.010000 xlmax={len(clauses)*10000}\n")
 lines.append("\n")
 
 # Defining control circuitry
