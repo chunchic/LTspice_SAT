@@ -1,0 +1,1024 @@
+* Control circuit
+ESAT1 contra 0 value={fsat1()}
+RSAT1 contra 0 100meg
+ESAT2 contrd 0 value={fsat2()}
+RSAT2 contrd 0 100meg
+
+* Main variables
+Cs1 s1 0 1 IC={-1+mc(1,1)}
+Gs1 0 s1 value={fs1()}
+Rs1 s1 0 100meg
+Cs2 s2 0 1 IC={-1+mc(1,1)}
+Gs2 0 s2 value={fs2()}
+Rs2 s2 0 100meg
+Cs3 s3 0 1 IC={-1+mc(1,1)}
+Gs3 0 s3 value={fs3()}
+Rs3 s3 0 100meg
+Cs4 s4 0 1 IC={-1+mc(1,1)}
+Gs4 0 s4 value={fs4()}
+Rs4 s4 0 100meg
+Cs5 s5 0 1 IC={-1+mc(1,1)}
+Gs5 0 s5 value={fs5()}
+Rs5 s5 0 100meg
+Cs6 s6 0 1 IC={-1+mc(1,1)}
+Gs6 0 s6 value={fs6()}
+Rs6 s6 0 100meg
+Cs7 s7 0 1 IC={-1+mc(1,1)}
+Gs7 0 s7 value={fs7()}
+Rs7 s7 0 100meg
+Cs8 s8 0 1 IC={-1+mc(1,1)}
+Gs8 0 s8 value={fs8()}
+Rs8 s8 0 100meg
+Cs9 s9 0 1 IC={-1+mc(1,1)}
+Gs9 0 s9 value={fs9()}
+Rs9 s9 0 100meg
+Cs10 s10 0 1 IC={-1+mc(1,1)}
+Gs10 0 s10 value={fs10()}
+Rs10 s10 0 100meg
+Cs11 s11 0 1 IC={-1+mc(1,1)}
+Gs11 0 s11 value={fs11()}
+Rs11 s11 0 100meg
+Cs12 s12 0 1 IC={-1+mc(1,1)}
+Gs12 0 s12 value={fs12()}
+Rs12 s12 0 100meg
+Cs13 s13 0 1 IC={-1+mc(1,1)}
+Gs13 0 s13 value={fs13()}
+Rs13 s13 0 100meg
+Cs14 s14 0 1 IC={-1+mc(1,1)}
+Gs14 0 s14 value={fs14()}
+Rs14 s14 0 100meg
+Cs15 s15 0 1 IC={-1+mc(1,1)}
+Gs15 0 s15 value={fs15()}
+Rs15 s15 0 100meg
+Cs16 s16 0 1 IC={-1+mc(1,1)}
+Gs16 0 s16 value={fs16()}
+Rs16 s16 0 100meg
+Cs17 s17 0 1 IC={-1+mc(1,1)}
+Gs17 0 s17 value={fs17()}
+Rs17 s17 0 100meg
+Cs18 s18 0 1 IC={-1+mc(1,1)}
+Gs18 0 s18 value={fs18()}
+Rs18 s18 0 100meg
+Cs19 s19 0 1 IC={-1+mc(1,1)}
+Gs19 0 s19 value={fs19()}
+Rs19 s19 0 100meg
+Cs20 s20 0 1 IC={-1+mc(1,1)}
+Gs20 0 s20 value={fs20()}
+Rs20 s20 0 100meg
+Cs21 s21 0 1 IC={-1+mc(1,1)}
+Gs21 0 s21 value={fs21()}
+Rs21 s21 0 100meg
+Cs22 s22 0 1 IC={-1+mc(1,1)}
+Gs22 0 s22 value={fs22()}
+Rs22 s22 0 100meg
+Cs23 s23 0 1 IC={-1+mc(1,1)}
+Gs23 0 s23 value={fs23()}
+Rs23 s23 0 100meg
+Cs24 s24 0 1 IC={-1+mc(1,1)}
+Gs24 0 s24 value={fs24()}
+Rs24 s24 0 100meg
+Cs25 s25 0 1 IC={-1+mc(1,1)}
+Gs25 0 s25 value={fs25()}
+Rs25 s25 0 100meg
+Cs26 s26 0 1 IC={-1+mc(1,1)}
+Gs26 0 s26 value={fs26()}
+Rs26 s26 0 100meg
+Cs27 s27 0 1 IC={-1+mc(1,1)}
+Gs27 0 s27 value={fs27()}
+Rs27 s27 0 100meg
+Cs28 s28 0 1 IC={-1+mc(1,1)}
+Gs28 0 s28 value={fs28()}
+Rs28 s28 0 100meg
+Cs29 s29 0 1 IC={-1+mc(1,1)}
+Gs29 0 s29 value={fs29()}
+Rs29 s29 0 100meg
+Cs30 s30 0 1 IC={-1+mc(1,1)}
+Gs30 0 s30 value={fs30()}
+Rs30 s30 0 100meg
+Cs31 s31 0 1 IC={-1+mc(1,1)}
+Gs31 0 s31 value={fs31()}
+Rs31 s31 0 100meg
+Cs32 s32 0 1 IC={-1+mc(1,1)}
+Gs32 0 s32 value={fs32()}
+Rs32 s32 0 100meg
+Cs33 s33 0 1 IC={-1+mc(1,1)}
+Gs33 0 s33 value={fs33()}
+Rs33 s33 0 100meg
+Cs34 s34 0 1 IC={-1+mc(1,1)}
+Gs34 0 s34 value={fs34()}
+Rs34 s34 0 100meg
+Cs35 s35 0 1 IC={-1+mc(1,1)}
+Gs35 0 s35 value={fs35()}
+Rs35 s35 0 100meg
+Cs36 s36 0 1 IC={-1+mc(1,1)}
+Gs36 0 s36 value={fs36()}
+Rs36 s36 0 100meg
+Cs37 s37 0 1 IC={-1+mc(1,1)}
+Gs37 0 s37 value={fs37()}
+Rs37 s37 0 100meg
+Cs38 s38 0 1 IC={-1+mc(1,1)}
+Gs38 0 s38 value={fs38()}
+Rs38 s38 0 100meg
+Cs39 s39 0 1 IC={-1+mc(1,1)}
+Gs39 0 s39 value={fs39()}
+Rs39 s39 0 100meg
+Cs40 s40 0 1 IC={-1+mc(1,1)}
+Gs40 0 s40 value={fs40()}
+Rs40 s40 0 100meg
+Cs41 s41 0 1 IC={-1+mc(1,1)}
+Gs41 0 s41 value={fs41()}
+Rs41 s41 0 100meg
+Cs42 s42 0 1 IC={-1+mc(1,1)}
+Gs42 0 s42 value={fs42()}
+Rs42 s42 0 100meg
+Cs43 s43 0 1 IC={-1+mc(1,1)}
+Gs43 0 s43 value={fs43()}
+Rs43 s43 0 100meg
+Cs44 s44 0 1 IC={-1+mc(1,1)}
+Gs44 0 s44 value={fs44()}
+Rs44 s44 0 100meg
+Cs45 s45 0 1 IC={-1+mc(1,1)}
+Gs45 0 s45 value={fs45()}
+Rs45 s45 0 100meg
+Cs46 s46 0 1 IC={-1+mc(1,1)}
+Gs46 0 s46 value={fs46()}
+Rs46 s46 0 100meg
+Cs47 s47 0 1 IC={-1+mc(1,1)}
+Gs47 0 s47 value={fs47()}
+Rs47 s47 0 100meg
+Cs48 s48 0 1 IC={-1+mc(1,1)}
+Gs48 0 s48 value={fs48()}
+Rs48 s48 0 100meg
+Cs49 s49 0 1 IC={-1+mc(1,1)}
+Gs49 0 s49 value={fs49()}
+Rs49 s49 0 100meg
+Cs50 s50 0 1 IC={-1+mc(1,1)}
+Gs50 0 s50 value={fs50()}
+Rs50 s50 0 100meg
+
+* Memory variables
+Ca1 a1 0 1 IC={1}
+Ga1 0 a1 value={fa1()}
+Ra1 a1 0 100meg
+Ca2 a2 0 1 IC={1}
+Ga2 0 a2 value={fa2()}
+Ra2 a2 0 100meg
+Ca3 a3 0 1 IC={1}
+Ga3 0 a3 value={fa3()}
+Ra3 a3 0 100meg
+Ca4 a4 0 1 IC={1}
+Ga4 0 a4 value={fa4()}
+Ra4 a4 0 100meg
+Ca5 a5 0 1 IC={1}
+Ga5 0 a5 value={fa5()}
+Ra5 a5 0 100meg
+Ca6 a6 0 1 IC={1}
+Ga6 0 a6 value={fa6()}
+Ra6 a6 0 100meg
+Ca7 a7 0 1 IC={1}
+Ga7 0 a7 value={fa7()}
+Ra7 a7 0 100meg
+Ca8 a8 0 1 IC={1}
+Ga8 0 a8 value={fa8()}
+Ra8 a8 0 100meg
+Ca9 a9 0 1 IC={1}
+Ga9 0 a9 value={fa9()}
+Ra9 a9 0 100meg
+Ca10 a10 0 1 IC={1}
+Ga10 0 a10 value={fa10()}
+Ra10 a10 0 100meg
+Ca11 a11 0 1 IC={1}
+Ga11 0 a11 value={fa11()}
+Ra11 a11 0 100meg
+Ca12 a12 0 1 IC={1}
+Ga12 0 a12 value={fa12()}
+Ra12 a12 0 100meg
+Ca13 a13 0 1 IC={1}
+Ga13 0 a13 value={fa13()}
+Ra13 a13 0 100meg
+Ca14 a14 0 1 IC={1}
+Ga14 0 a14 value={fa14()}
+Ra14 a14 0 100meg
+Ca15 a15 0 1 IC={1}
+Ga15 0 a15 value={fa15()}
+Ra15 a15 0 100meg
+Ca16 a16 0 1 IC={1}
+Ga16 0 a16 value={fa16()}
+Ra16 a16 0 100meg
+Ca17 a17 0 1 IC={1}
+Ga17 0 a17 value={fa17()}
+Ra17 a17 0 100meg
+Ca18 a18 0 1 IC={1}
+Ga18 0 a18 value={fa18()}
+Ra18 a18 0 100meg
+Ca19 a19 0 1 IC={1}
+Ga19 0 a19 value={fa19()}
+Ra19 a19 0 100meg
+Ca20 a20 0 1 IC={1}
+Ga20 0 a20 value={fa20()}
+Ra20 a20 0 100meg
+Ca21 a21 0 1 IC={1}
+Ga21 0 a21 value={fa21()}
+Ra21 a21 0 100meg
+Ca22 a22 0 1 IC={1}
+Ga22 0 a22 value={fa22()}
+Ra22 a22 0 100meg
+Ca23 a23 0 1 IC={1}
+Ga23 0 a23 value={fa23()}
+Ra23 a23 0 100meg
+Ca24 a24 0 1 IC={1}
+Ga24 0 a24 value={fa24()}
+Ra24 a24 0 100meg
+Ca25 a25 0 1 IC={1}
+Ga25 0 a25 value={fa25()}
+Ra25 a25 0 100meg
+Ca26 a26 0 1 IC={1}
+Ga26 0 a26 value={fa26()}
+Ra26 a26 0 100meg
+Ca27 a27 0 1 IC={1}
+Ga27 0 a27 value={fa27()}
+Ra27 a27 0 100meg
+Ca28 a28 0 1 IC={1}
+Ga28 0 a28 value={fa28()}
+Ra28 a28 0 100meg
+Ca29 a29 0 1 IC={1}
+Ga29 0 a29 value={fa29()}
+Ra29 a29 0 100meg
+Ca30 a30 0 1 IC={1}
+Ga30 0 a30 value={fa30()}
+Ra30 a30 0 100meg
+Ca31 a31 0 1 IC={1}
+Ga31 0 a31 value={fa31()}
+Ra31 a31 0 100meg
+Ca32 a32 0 1 IC={1}
+Ga32 0 a32 value={fa32()}
+Ra32 a32 0 100meg
+Ca33 a33 0 1 IC={1}
+Ga33 0 a33 value={fa33()}
+Ra33 a33 0 100meg
+Ca34 a34 0 1 IC={1}
+Ga34 0 a34 value={fa34()}
+Ra34 a34 0 100meg
+Ca35 a35 0 1 IC={1}
+Ga35 0 a35 value={fa35()}
+Ra35 a35 0 100meg
+Ca36 a36 0 1 IC={1}
+Ga36 0 a36 value={fa36()}
+Ra36 a36 0 100meg
+Ca37 a37 0 1 IC={1}
+Ga37 0 a37 value={fa37()}
+Ra37 a37 0 100meg
+Ca38 a38 0 1 IC={1}
+Ga38 0 a38 value={fa38()}
+Ra38 a38 0 100meg
+Ca39 a39 0 1 IC={1}
+Ga39 0 a39 value={fa39()}
+Ra39 a39 0 100meg
+Ca40 a40 0 1 IC={1}
+Ga40 0 a40 value={fa40()}
+Ra40 a40 0 100meg
+Ca41 a41 0 1 IC={1}
+Ga41 0 a41 value={fa41()}
+Ra41 a41 0 100meg
+Ca42 a42 0 1 IC={1}
+Ga42 0 a42 value={fa42()}
+Ra42 a42 0 100meg
+Ca43 a43 0 1 IC={1}
+Ga43 0 a43 value={fa43()}
+Ra43 a43 0 100meg
+Ca44 a44 0 1 IC={1}
+Ga44 0 a44 value={fa44()}
+Ra44 a44 0 100meg
+Ca45 a45 0 1 IC={1}
+Ga45 0 a45 value={fa45()}
+Ra45 a45 0 100meg
+Ca46 a46 0 1 IC={1}
+Ga46 0 a46 value={fa46()}
+Ra46 a46 0 100meg
+Ca47 a47 0 1 IC={1}
+Ga47 0 a47 value={fa47()}
+Ra47 a47 0 100meg
+Ca48 a48 0 1 IC={1}
+Ga48 0 a48 value={fa48()}
+Ra48 a48 0 100meg
+Ca49 a49 0 1 IC={1}
+Ga49 0 a49 value={fa49()}
+Ra49 a49 0 100meg
+Ca50 a50 0 1 IC={1}
+Ga50 0 a50 value={fa50()}
+Ra50 a50 0 100meg
+Ca51 a51 0 1 IC={1}
+Ga51 0 a51 value={fa51()}
+Ra51 a51 0 100meg
+Ca52 a52 0 1 IC={1}
+Ga52 0 a52 value={fa52()}
+Ra52 a52 0 100meg
+Ca53 a53 0 1 IC={1}
+Ga53 0 a53 value={fa53()}
+Ra53 a53 0 100meg
+Ca54 a54 0 1 IC={1}
+Ga54 0 a54 value={fa54()}
+Ra54 a54 0 100meg
+Ca55 a55 0 1 IC={1}
+Ga55 0 a55 value={fa55()}
+Ra55 a55 0 100meg
+Ca56 a56 0 1 IC={1}
+Ga56 0 a56 value={fa56()}
+Ra56 a56 0 100meg
+Ca57 a57 0 1 IC={1}
+Ga57 0 a57 value={fa57()}
+Ra57 a57 0 100meg
+Ca58 a58 0 1 IC={1}
+Ga58 0 a58 value={fa58()}
+Ra58 a58 0 100meg
+Ca59 a59 0 1 IC={1}
+Ga59 0 a59 value={fa59()}
+Ra59 a59 0 100meg
+Ca60 a60 0 1 IC={1}
+Ga60 0 a60 value={fa60()}
+Ra60 a60 0 100meg
+Ca61 a61 0 1 IC={1}
+Ga61 0 a61 value={fa61()}
+Ra61 a61 0 100meg
+Ca62 a62 0 1 IC={1}
+Ga62 0 a62 value={fa62()}
+Ra62 a62 0 100meg
+Ca63 a63 0 1 IC={1}
+Ga63 0 a63 value={fa63()}
+Ra63 a63 0 100meg
+Ca64 a64 0 1 IC={1}
+Ga64 0 a64 value={fa64()}
+Ra64 a64 0 100meg
+Ca65 a65 0 1 IC={1}
+Ga65 0 a65 value={fa65()}
+Ra65 a65 0 100meg
+Ca66 a66 0 1 IC={1}
+Ga66 0 a66 value={fa66()}
+Ra66 a66 0 100meg
+Ca67 a67 0 1 IC={1}
+Ga67 0 a67 value={fa67()}
+Ra67 a67 0 100meg
+Ca68 a68 0 1 IC={1}
+Ga68 0 a68 value={fa68()}
+Ra68 a68 0 100meg
+Ca69 a69 0 1 IC={1}
+Ga69 0 a69 value={fa69()}
+Ra69 a69 0 100meg
+Ca70 a70 0 1 IC={1}
+Ga70 0 a70 value={fa70()}
+Ra70 a70 0 100meg
+Ca71 a71 0 1 IC={1}
+Ga71 0 a71 value={fa71()}
+Ra71 a71 0 100meg
+Ca72 a72 0 1 IC={1}
+Ga72 0 a72 value={fa72()}
+Ra72 a72 0 100meg
+Ca73 a73 0 1 IC={1}
+Ga73 0 a73 value={fa73()}
+Ra73 a73 0 100meg
+Ca74 a74 0 1 IC={1}
+Ga74 0 a74 value={fa74()}
+Ra74 a74 0 100meg
+Ca75 a75 0 1 IC={1}
+Ga75 0 a75 value={fa75()}
+Ra75 a75 0 100meg
+Ca76 a76 0 1 IC={1}
+Ga76 0 a76 value={fa76()}
+Ra76 a76 0 100meg
+Ca77 a77 0 1 IC={1}
+Ga77 0 a77 value={fa77()}
+Ra77 a77 0 100meg
+Ca78 a78 0 1 IC={1}
+Ga78 0 a78 value={fa78()}
+Ra78 a78 0 100meg
+Ca79 a79 0 1 IC={1}
+Ga79 0 a79 value={fa79()}
+Ra79 a79 0 100meg
+Ca80 a80 0 1 IC={1}
+Ga80 0 a80 value={fa80()}
+Ra80 a80 0 100meg
+Ca81 a81 0 1 IC={1}
+Ga81 0 a81 value={fa81()}
+Ra81 a81 0 100meg
+Ca82 a82 0 1 IC={1}
+Ga82 0 a82 value={fa82()}
+Ra82 a82 0 100meg
+Ca83 a83 0 1 IC={1}
+Ga83 0 a83 value={fa83()}
+Ra83 a83 0 100meg
+Ca84 a84 0 1 IC={1}
+Ga84 0 a84 value={fa84()}
+Ra84 a84 0 100meg
+Ca85 a85 0 1 IC={1}
+Ga85 0 a85 value={fa85()}
+Ra85 a85 0 100meg
+Ca86 a86 0 1 IC={1}
+Ga86 0 a86 value={fa86()}
+Ra86 a86 0 100meg
+Ca87 a87 0 1 IC={1}
+Ga87 0 a87 value={fa87()}
+Ra87 a87 0 100meg
+Ca88 a88 0 1 IC={1}
+Ga88 0 a88 value={fa88()}
+Ra88 a88 0 100meg
+Ca89 a89 0 1 IC={1}
+Ga89 0 a89 value={fa89()}
+Ra89 a89 0 100meg
+Ca90 a90 0 1 IC={1}
+Ga90 0 a90 value={fa90()}
+Ra90 a90 0 100meg
+Ca91 a91 0 1 IC={1}
+Ga91 0 a91 value={fa91()}
+Ra91 a91 0 100meg
+Ca92 a92 0 1 IC={1}
+Ga92 0 a92 value={fa92()}
+Ra92 a92 0 100meg
+Ca93 a93 0 1 IC={1}
+Ga93 0 a93 value={fa93()}
+Ra93 a93 0 100meg
+Ca94 a94 0 1 IC={1}
+Ga94 0 a94 value={fa94()}
+Ra94 a94 0 100meg
+Ca95 a95 0 1 IC={1}
+Ga95 0 a95 value={fa95()}
+Ra95 a95 0 100meg
+Ca96 a96 0 1 IC={1}
+Ga96 0 a96 value={fa96()}
+Ra96 a96 0 100meg
+Ca97 a97 0 1 IC={1}
+Ga97 0 a97 value={fa97()}
+Ra97 a97 0 100meg
+Ca98 a98 0 1 IC={1}
+Ga98 0 a98 value={fa98()}
+Ra98 a98 0 100meg
+Ca99 a99 0 1 IC={1}
+Ga99 0 a99 value={fa99()}
+Ra99 a99 0 100meg
+Ca100 a100 0 1 IC={1}
+Ga100 0 a100 value={fa100()}
+Ra100 a100 0 100meg
+Ca101 a101 0 1 IC={1}
+Ga101 0 a101 value={fa101()}
+Ra101 a101 0 100meg
+Ca102 a102 0 1 IC={1}
+Ga102 0 a102 value={fa102()}
+Ra102 a102 0 100meg
+Ca103 a103 0 1 IC={1}
+Ga103 0 a103 value={fa103()}
+Ra103 a103 0 100meg
+Ca104 a104 0 1 IC={1}
+Ga104 0 a104 value={fa104()}
+Ra104 a104 0 100meg
+Ca105 a105 0 1 IC={1}
+Ga105 0 a105 value={fa105()}
+Ra105 a105 0 100meg
+Ca106 a106 0 1 IC={1}
+Ga106 0 a106 value={fa106()}
+Ra106 a106 0 100meg
+Ca107 a107 0 1 IC={1}
+Ga107 0 a107 value={fa107()}
+Ra107 a107 0 100meg
+Ca108 a108 0 1 IC={1}
+Ga108 0 a108 value={fa108()}
+Ra108 a108 0 100meg
+Ca109 a109 0 1 IC={1}
+Ga109 0 a109 value={fa109()}
+Ra109 a109 0 100meg
+Ca110 a110 0 1 IC={1}
+Ga110 0 a110 value={fa110()}
+Ra110 a110 0 100meg
+Ca111 a111 0 1 IC={1}
+Ga111 0 a111 value={fa111()}
+Ra111 a111 0 100meg
+Ca112 a112 0 1 IC={1}
+Ga112 0 a112 value={fa112()}
+Ra112 a112 0 100meg
+Ca113 a113 0 1 IC={1}
+Ga113 0 a113 value={fa113()}
+Ra113 a113 0 100meg
+Ca114 a114 0 1 IC={1}
+Ga114 0 a114 value={fa114()}
+Ra114 a114 0 100meg
+Ca115 a115 0 1 IC={1}
+Ga115 0 a115 value={fa115()}
+Ra115 a115 0 100meg
+Ca116 a116 0 1 IC={1}
+Ga116 0 a116 value={fa116()}
+Ra116 a116 0 100meg
+Ca117 a117 0 1 IC={1}
+Ga117 0 a117 value={fa117()}
+Ra117 a117 0 100meg
+Ca118 a118 0 1 IC={1}
+Ga118 0 a118 value={fa118()}
+Ra118 a118 0 100meg
+Ca119 a119 0 1 IC={1}
+Ga119 0 a119 value={fa119()}
+Ra119 a119 0 100meg
+Ca120 a120 0 1 IC={1}
+Ga120 0 a120 value={fa120()}
+Ra120 a120 0 100meg
+Ca121 a121 0 1 IC={1}
+Ga121 0 a121 value={fa121()}
+Ra121 a121 0 100meg
+Ca122 a122 0 1 IC={1}
+Ga122 0 a122 value={fa122()}
+Ra122 a122 0 100meg
+Ca123 a123 0 1 IC={1}
+Ga123 0 a123 value={fa123()}
+Ra123 a123 0 100meg
+Ca124 a124 0 1 IC={1}
+Ga124 0 a124 value={fa124()}
+Ra124 a124 0 100meg
+Ca125 a125 0 1 IC={1}
+Ga125 0 a125 value={fa125()}
+Ra125 a125 0 100meg
+Ca126 a126 0 1 IC={1}
+Ga126 0 a126 value={fa126()}
+Ra126 a126 0 100meg
+Ca127 a127 0 1 IC={1}
+Ga127 0 a127 value={fa127()}
+Ra127 a127 0 100meg
+Ca128 a128 0 1 IC={1}
+Ga128 0 a128 value={fa128()}
+Ra128 a128 0 100meg
+Ca129 a129 0 1 IC={1}
+Ga129 0 a129 value={fa129()}
+Ra129 a129 0 100meg
+Ca130 a130 0 1 IC={1}
+Ga130 0 a130 value={fa130()}
+Ra130 a130 0 100meg
+Ca131 a131 0 1 IC={1}
+Ga131 0 a131 value={fa131()}
+Ra131 a131 0 100meg
+Ca132 a132 0 1 IC={1}
+Ga132 0 a132 value={fa132()}
+Ra132 a132 0 100meg
+Ca133 a133 0 1 IC={1}
+Ga133 0 a133 value={fa133()}
+Ra133 a133 0 100meg
+Ca134 a134 0 1 IC={1}
+Ga134 0 a134 value={fa134()}
+Ra134 a134 0 100meg
+Ca135 a135 0 1 IC={1}
+Ga135 0 a135 value={fa135()}
+Ra135 a135 0 100meg
+Ca136 a136 0 1 IC={1}
+Ga136 0 a136 value={fa136()}
+Ra136 a136 0 100meg
+Ca137 a137 0 1 IC={1}
+Ga137 0 a137 value={fa137()}
+Ra137 a137 0 100meg
+Ca138 a138 0 1 IC={1}
+Ga138 0 a138 value={fa138()}
+Ra138 a138 0 100meg
+Ca139 a139 0 1 IC={1}
+Ga139 0 a139 value={fa139()}
+Ra139 a139 0 100meg
+Ca140 a140 0 1 IC={1}
+Ga140 0 a140 value={fa140()}
+Ra140 a140 0 100meg
+Ca141 a141 0 1 IC={1}
+Ga141 0 a141 value={fa141()}
+Ra141 a141 0 100meg
+Ca142 a142 0 1 IC={1}
+Ga142 0 a142 value={fa142()}
+Ra142 a142 0 100meg
+Ca143 a143 0 1 IC={1}
+Ga143 0 a143 value={fa143()}
+Ra143 a143 0 100meg
+Ca144 a144 0 1 IC={1}
+Ga144 0 a144 value={fa144()}
+Ra144 a144 0 100meg
+Ca145 a145 0 1 IC={1}
+Ga145 0 a145 value={fa145()}
+Ra145 a145 0 100meg
+Ca146 a146 0 1 IC={1}
+Ga146 0 a146 value={fa146()}
+Ra146 a146 0 100meg
+Ca147 a147 0 1 IC={1}
+Ga147 0 a147 value={fa147()}
+Ra147 a147 0 100meg
+Ca148 a148 0 1 IC={1}
+Ga148 0 a148 value={fa148()}
+Ra148 a148 0 100meg
+Ca149 a149 0 1 IC={1}
+Ga149 0 a149 value={fa149()}
+Ra149 a149 0 100meg
+Ca150 a150 0 1 IC={1}
+Ga150 0 a150 value={fa150()}
+Ra150 a150 0 100meg
+Ca151 a151 0 1 IC={1}
+Ga151 0 a151 value={fa151()}
+Ra151 a151 0 100meg
+Ca152 a152 0 1 IC={1}
+Ga152 0 a152 value={fa152()}
+Ra152 a152 0 100meg
+Ca153 a153 0 1 IC={1}
+Ga153 0 a153 value={fa153()}
+Ra153 a153 0 100meg
+Ca154 a154 0 1 IC={1}
+Ga154 0 a154 value={fa154()}
+Ra154 a154 0 100meg
+Ca155 a155 0 1 IC={1}
+Ga155 0 a155 value={fa155()}
+Ra155 a155 0 100meg
+Ca156 a156 0 1 IC={1}
+Ga156 0 a156 value={fa156()}
+Ra156 a156 0 100meg
+Ca157 a157 0 1 IC={1}
+Ga157 0 a157 value={fa157()}
+Ra157 a157 0 100meg
+Ca158 a158 0 1 IC={1}
+Ga158 0 a158 value={fa158()}
+Ra158 a158 0 100meg
+Ca159 a159 0 1 IC={1}
+Ga159 0 a159 value={fa159()}
+Ra159 a159 0 100meg
+Ca160 a160 0 1 IC={1}
+Ga160 0 a160 value={fa160()}
+Ra160 a160 0 100meg
+Ca161 a161 0 1 IC={1}
+Ga161 0 a161 value={fa161()}
+Ra161 a161 0 100meg
+Ca162 a162 0 1 IC={1}
+Ga162 0 a162 value={fa162()}
+Ra162 a162 0 100meg
+Ca163 a163 0 1 IC={1}
+Ga163 0 a163 value={fa163()}
+Ra163 a163 0 100meg
+Ca164 a164 0 1 IC={1}
+Ga164 0 a164 value={fa164()}
+Ra164 a164 0 100meg
+Ca165 a165 0 1 IC={1}
+Ga165 0 a165 value={fa165()}
+Ra165 a165 0 100meg
+Ca166 a166 0 1 IC={1}
+Ga166 0 a166 value={fa166()}
+Ra166 a166 0 100meg
+Ca167 a167 0 1 IC={1}
+Ga167 0 a167 value={fa167()}
+Ra167 a167 0 100meg
+Ca168 a168 0 1 IC={1}
+Ga168 0 a168 value={fa168()}
+Ra168 a168 0 100meg
+Ca169 a169 0 1 IC={1}
+Ga169 0 a169 value={fa169()}
+Ra169 a169 0 100meg
+Ca170 a170 0 1 IC={1}
+Ga170 0 a170 value={fa170()}
+Ra170 a170 0 100meg
+Ca171 a171 0 1 IC={1}
+Ga171 0 a171 value={fa171()}
+Ra171 a171 0 100meg
+Ca172 a172 0 1 IC={1}
+Ga172 0 a172 value={fa172()}
+Ra172 a172 0 100meg
+Ca173 a173 0 1 IC={1}
+Ga173 0 a173 value={fa173()}
+Ra173 a173 0 100meg
+Ca174 a174 0 1 IC={1}
+Ga174 0 a174 value={fa174()}
+Ra174 a174 0 100meg
+Ca175 a175 0 1 IC={1}
+Ga175 0 a175 value={fa175()}
+Ra175 a175 0 100meg
+Ca176 a176 0 1 IC={1}
+Ga176 0 a176 value={fa176()}
+Ra176 a176 0 100meg
+Ca177 a177 0 1 IC={1}
+Ga177 0 a177 value={fa177()}
+Ra177 a177 0 100meg
+Ca178 a178 0 1 IC={1}
+Ga178 0 a178 value={fa178()}
+Ra178 a178 0 100meg
+Ca179 a179 0 1 IC={1}
+Ga179 0 a179 value={fa179()}
+Ra179 a179 0 100meg
+Ca180 a180 0 1 IC={1}
+Ga180 0 a180 value={fa180()}
+Ra180 a180 0 100meg
+Ca181 a181 0 1 IC={1}
+Ga181 0 a181 value={fa181()}
+Ra181 a181 0 100meg
+Ca182 a182 0 1 IC={1}
+Ga182 0 a182 value={fa182()}
+Ra182 a182 0 100meg
+Ca183 a183 0 1 IC={1}
+Ga183 0 a183 value={fa183()}
+Ra183 a183 0 100meg
+Ca184 a184 0 1 IC={1}
+Ga184 0 a184 value={fa184()}
+Ra184 a184 0 100meg
+Ca185 a185 0 1 IC={1}
+Ga185 0 a185 value={fa185()}
+Ra185 a185 0 100meg
+Ca186 a186 0 1 IC={1}
+Ga186 0 a186 value={fa186()}
+Ra186 a186 0 100meg
+Ca187 a187 0 1 IC={1}
+Ga187 0 a187 value={fa187()}
+Ra187 a187 0 100meg
+Ca188 a188 0 1 IC={1}
+Ga188 0 a188 value={fa188()}
+Ra188 a188 0 100meg
+Ca189 a189 0 1 IC={1}
+Ga189 0 a189 value={fa189()}
+Ra189 a189 0 100meg
+Ca190 a190 0 1 IC={1}
+Ga190 0 a190 value={fa190()}
+Ra190 a190 0 100meg
+Ca191 a191 0 1 IC={1}
+Ga191 0 a191 value={fa191()}
+Ra191 a191 0 100meg
+Ca192 a192 0 1 IC={1}
+Ga192 0 a192 value={fa192()}
+Ra192 a192 0 100meg
+Ca193 a193 0 1 IC={1}
+Ga193 0 a193 value={fa193()}
+Ra193 a193 0 100meg
+Ca194 a194 0 1 IC={1}
+Ga194 0 a194 value={fa194()}
+Ra194 a194 0 100meg
+Ca195 a195 0 1 IC={1}
+Ga195 0 a195 value={fa195()}
+Ra195 a195 0 100meg
+Ca196 a196 0 1 IC={1}
+Ga196 0 a196 value={fa196()}
+Ra196 a196 0 100meg
+Ca197 a197 0 1 IC={1}
+Ga197 0 a197 value={fa197()}
+Ra197 a197 0 100meg
+Ca198 a198 0 1 IC={1}
+Ga198 0 a198 value={fa198()}
+Ra198 a198 0 100meg
+Ca199 a199 0 1 IC={1}
+Ga199 0 a199 value={fa199()}
+Ra199 a199 0 100meg
+Ca200 a200 0 1 IC={1}
+Ga200 0 a200 value={fa200()}
+Ra200 a200 0 100meg
+
+* functions
+.func Cm(x,y,z)={0.5*min(1-x,min(1-y,1-z))}
+.func Cm1(x,y,z)={min(1-u(x),min(1-u(y),1-u(z)))}
+
+.func fsat1()=Cm(V(s8),V(s18),V(s23))+Cm(-V(s8),-V(s18),V(s23))+Cm(-V(s8),V(s18),-V(s23))+Cm(V(s8),-V(s18),-V(s23))+Cm(-V(s2),-V(s28),-V(s35))+Cm(-V(s2),V(s28),V(s35))+Cm(V(s2),-V(s28),V(s35))+Cm(V(s2),V(s28),-V(s35))+Cm(-V(s17),-V(s31),-V(s45))+Cm(-V(s17),V(s31),V(s45))+Cm(V(s17),-V(s31),V(s45))+Cm(V(s17),V(s31),-V(s45))+Cm(V(s5),V(s18),V(s22))+Cm(-V(s5),-V(s18),V(s22))+Cm(-V(s5),V(s18),-V(s22))+Cm(V(s5),-V(s18),-V(s22))+Cm(-V(s27),-V(s38),-V(s42))+Cm(-V(s27),V(s38),V(s42))+Cm(V(s27),-V(s38),V(s42))+Cm(V(s27),V(s38),-V(s42))+Cm(V(s12),V(s15),V(s21))+Cm(-V(s12),-V(s15),V(s21))+Cm(-V(s12),V(s15),-V(s21))+Cm(V(s12),-V(s15),-V(s21))+Cm(-V(s23),-V(s32),-V(s47))+Cm(-V(s23),V(s32),V(s47))+Cm(V(s23),-V(s32),V(s47))+Cm(V(s23),V(s32),-V(s47))+Cm(V(s4),V(s43),V(s46))+Cm(-V(s4),-V(s43),V(s46))+Cm(-V(s4),V(s43),-V(s46))+Cm(V(s4),-V(s43),-V(s46))+Cm(V(s20),V(s24),V(s41))+Cm(-V(s20),-V(s24),V(s41))+Cm(-V(s20),V(s24),-V(s41))+Cm(V(s20),-V(s24),-V(s41))+Cm(V(s2),V(s37),V(s38))+Cm(-V(s2),-V(s37),V(s38))+Cm(-V(s2),V(s37),-V(s38))+Cm(V(s2),-V(s37),-V(s38))+Cm(V(s43),V(s46),V(s47))+Cm(-V(s43),-V(s46),V(s47))+Cm(-V(s43),V(s46),-V(s47))+Cm(V(s43),-V(s46),-V(s47))+Cm(-V(s24),-V(s45),-V(s50))+Cm(-V(s24),V(s45),V(s50))+Cm(V(s24),-V(s45),V(s50))+Cm(V(s24),V(s45),-V(s50))+Cm(-V(s3),-V(s21),-V(s35))+Cm(-V(s3),V(s21),V(s35))+Cm(V(s3),-V(s21),V(s35))+Cm(V(s3),V(s21),-V(s35))+Cm(-V(s4),-V(s5),-V(s25))+Cm(-V(s4),V(s5),V(s25))+Cm(V(s4),-V(s5),V(s25))+Cm(V(s4),V(s5),-V(s25))+Cm(-V(s4),-V(s43),-V(s48))+Cm(-V(s4),V(s43),V(s48))+Cm(V(s4),-V(s43),V(s48))+Cm(V(s4),V(s43),-V(s48))+Cm(-V(s3),-V(s26),-V(s30))+Cm(-V(s3),V(s26),V(s30))+Cm(V(s3),-V(s26),V(s30))+Cm(V(s3),V(s26),-V(s30))+Cm(-V(s12),-V(s27),-V(s39))+Cm(-V(s12),V(s27),V(s39))+Cm(V(s12),-V(s27),V(s39))+Cm(V(s12),V(s27),-V(s39))+Cm(V(s6),V(s22),V(s30))+Cm(-V(s6),-V(s22),V(s30))+Cm(-V(s6),V(s22),-V(s30))+Cm(V(s6),-V(s22),-V(s30))+Cm(-V(s26),-V(s24),-V(s32))+Cm(-V(s26),V(s24),V(s32))+Cm(V(s26),-V(s24),V(s32))+Cm(V(s26),V(s24),-V(s32))+Cm(-V(s1),-V(s28),-V(s29))+Cm(-V(s1),V(s28),V(s29))+Cm(V(s1),-V(s28),V(s29))+Cm(V(s1),V(s28),-V(s29))+Cm(V(s8),V(s10),V(s42))+Cm(-V(s8),-V(s10),V(s42))+Cm(-V(s8),V(s10),-V(s42))+Cm(V(s8),-V(s10),-V(s42))+Cm(V(s10),V(s31),V(s34))+Cm(-V(s10),-V(s31),V(s34))+Cm(-V(s10),V(s31),-V(s34))+Cm(V(s10),-V(s31),-V(s34))+Cm(-V(s11),-V(s17),-V(s18))+Cm(-V(s11),V(s17),V(s18))+Cm(V(s11),-V(s17),V(s18))+Cm(V(s11),V(s17),-V(s18))+Cm(V(s16),V(s25),V(s33))+Cm(-V(s16),-V(s25),V(s33))+Cm(-V(s16),V(s25),-V(s33))+Cm(V(s16),-V(s25),-V(s33))+Cm(V(s28),V(s37),V(s44))+Cm(-V(s28),-V(s37),V(s44))+Cm(-V(s28),V(s37),-V(s44))+Cm(V(s28),-V(s37),-V(s44))+Cm(-V(s3),-V(s49),-V(s50))+Cm(-V(s3),V(s49),V(s50))+Cm(V(s3),-V(s49),V(s50))+Cm(V(s3),V(s49),-V(s50))+Cm(-V(s25),-V(s36),-V(s38))+Cm(-V(s25),V(s36),V(s38))+Cm(V(s25),-V(s36),V(s38))+Cm(V(s25),V(s36),-V(s38))+Cm(-V(s10),-V(s11),-V(s14))+Cm(-V(s10),V(s11),V(s14))+Cm(V(s10),-V(s11),V(s14))+Cm(V(s10),V(s11),-V(s14))+Cm(-V(s27),-V(s30),-V(s40))+Cm(-V(s27),V(s30),V(s40))+Cm(V(s27),-V(s30),V(s40))+Cm(V(s27),V(s30),-V(s40))+Cm(V(s11),V(s33),V(s34))+Cm(-V(s11),-V(s33),V(s34))+Cm(-V(s11),V(s33),-V(s34))+Cm(V(s11),-V(s33),-V(s34))+Cm(V(s29),V(s45),V(s48))+Cm(-V(s29),-V(s45),V(s48))+Cm(-V(s29),V(s45),-V(s48))+Cm(V(s29),-V(s45),-V(s48))+Cm(-V(s2),-V(s19),-V(s21))+Cm(-V(s2),V(s19),V(s21))+Cm(V(s2),-V(s19),V(s21))+Cm(V(s2),V(s19),-V(s21))+Cm(-V(s17),-V(s36),-V(s39))+Cm(-V(s17),V(s36),V(s39))+Cm(V(s17),-V(s36),V(s39))+Cm(V(s17),V(s36),-V(s39))+Cm(V(s22),V(s36),V(s19))+Cm(-V(s22),-V(s36),V(s19))+Cm(-V(s22),V(s36),-V(s19))+Cm(V(s22),-V(s36),-V(s19))+Cm(V(s13),V(s14),V(s34))+Cm(-V(s13),-V(s14),V(s34))+Cm(-V(s13),V(s14),-V(s34))+Cm(V(s13),-V(s14),-V(s34))+Cm(-V(s29),-V(s40),-V(s41))+Cm(-V(s29),V(s40),V(s41))+Cm(V(s29),-V(s40),V(s41))+Cm(V(s29),V(s40),-V(s41))+Cm(V(s1),V(s16),V(s44))+Cm(-V(s1),-V(s16),V(s44))+Cm(-V(s1),V(s16),-V(s44))+Cm(V(s1),-V(s16),-V(s44))+Cm(V(s48),V(s49),V(s50))+Cm(-V(s48),-V(s49),V(s50))+Cm(-V(s48),V(s49),-V(s50))+Cm(V(s48),-V(s49),-V(s50))+Cm(-V(s12),-V(s20),-V(s31))+Cm(-V(s12),V(s20),V(s31))+Cm(V(s12),-V(s20),V(s31))+Cm(V(s12),V(s20),-V(s31))+Cm(-V(s7),-V(s41),-V(s46))+Cm(-V(s7),V(s41),V(s46))+Cm(V(s7),-V(s41),V(s46))+Cm(V(s7),V(s41),-V(s46))+Cm(-V(s9),-V(s26),-V(s40))+Cm(-V(s9),V(s26),V(s40))+Cm(V(s9),-V(s26),V(s40))+Cm(V(s9),V(s26),-V(s40))+Cm(-V(s1),-V(s7),-V(s32))+Cm(-V(s1),V(s7),V(s32))+Cm(V(s1),-V(s7),V(s32))+Cm(V(s1),V(s7),-V(s32))+Cm(-V(s9),-V(s13),-V(s19))+Cm(-V(s9),V(s13),V(s19))+Cm(V(s9),-V(s13),V(s19))+Cm(V(s9),V(s13),-V(s19))+Cm(-V(s37),-V(s16),-V(s39))+Cm(-V(s37),V(s16),V(s39))+Cm(V(s37),-V(s16),V(s39))+Cm(V(s37),V(s16),-V(s39))+Cm(V(s5),V(s6),V(s13))+Cm(-V(s5),-V(s6),V(s13))+Cm(-V(s5),V(s6),-V(s13))+Cm(V(s5),-V(s6),-V(s13))+Cm(-V(s15),-V(s42),-V(s44))+Cm(-V(s15),V(s42),V(s44))+Cm(V(s15),-V(s42),V(s44))+Cm(V(s15),V(s42),-V(s44))+Cm(-V(s6),-V(s35),-V(s49))+Cm(-V(s6),V(s35),V(s49))+Cm(V(s6),-V(s35),V(s49))+Cm(V(s6),V(s35),-V(s49))+Cm(-V(s23),-V(s33),-V(s47))+Cm(-V(s23),V(s33),V(s47))+Cm(V(s23),-V(s33),V(s47))+Cm(V(s23),V(s33),-V(s47))+Cm(V(s9),V(s14),V(s20))+Cm(-V(s9),-V(s14),V(s20))+Cm(-V(s9),V(s14),-V(s20))+Cm(V(s9),-V(s14),-V(s20))+Cm(V(s7),V(s8),V(s15))+Cm(-V(s7),-V(s8),V(s15))+Cm(-V(s7),V(s8),-V(s15))+Cm(V(s7),-V(s8),-V(s15))
+
+.func fsat2()=Cm1(V(s8),V(s18),V(s23))+Cm1(-V(s8),-V(s18),V(s23))+Cm1(-V(s8),V(s18),-V(s23))+Cm1(V(s8),-V(s18),-V(s23))+Cm1(-V(s2),-V(s28),-V(s35))+Cm1(-V(s2),V(s28),V(s35))+Cm1(V(s2),-V(s28),V(s35))+Cm1(V(s2),V(s28),-V(s35))+Cm1(-V(s17),-V(s31),-V(s45))+Cm1(-V(s17),V(s31),V(s45))+Cm1(V(s17),-V(s31),V(s45))+Cm1(V(s17),V(s31),-V(s45))+Cm1(V(s5),V(s18),V(s22))+Cm1(-V(s5),-V(s18),V(s22))+Cm1(-V(s5),V(s18),-V(s22))+Cm1(V(s5),-V(s18),-V(s22))+Cm1(-V(s27),-V(s38),-V(s42))+Cm1(-V(s27),V(s38),V(s42))+Cm1(V(s27),-V(s38),V(s42))+Cm1(V(s27),V(s38),-V(s42))+Cm1(V(s12),V(s15),V(s21))+Cm1(-V(s12),-V(s15),V(s21))+Cm1(-V(s12),V(s15),-V(s21))+Cm1(V(s12),-V(s15),-V(s21))+Cm1(-V(s23),-V(s32),-V(s47))+Cm1(-V(s23),V(s32),V(s47))+Cm1(V(s23),-V(s32),V(s47))+Cm1(V(s23),V(s32),-V(s47))+Cm1(V(s4),V(s43),V(s46))+Cm1(-V(s4),-V(s43),V(s46))+Cm1(-V(s4),V(s43),-V(s46))+Cm1(V(s4),-V(s43),-V(s46))+Cm1(V(s20),V(s24),V(s41))+Cm1(-V(s20),-V(s24),V(s41))+Cm1(-V(s20),V(s24),-V(s41))+Cm1(V(s20),-V(s24),-V(s41))+Cm1(V(s2),V(s37),V(s38))+Cm1(-V(s2),-V(s37),V(s38))+Cm1(-V(s2),V(s37),-V(s38))+Cm1(V(s2),-V(s37),-V(s38))+Cm1(V(s43),V(s46),V(s47))+Cm1(-V(s43),-V(s46),V(s47))+Cm1(-V(s43),V(s46),-V(s47))+Cm1(V(s43),-V(s46),-V(s47))+Cm1(-V(s24),-V(s45),-V(s50))+Cm1(-V(s24),V(s45),V(s50))+Cm1(V(s24),-V(s45),V(s50))+Cm1(V(s24),V(s45),-V(s50))+Cm1(-V(s3),-V(s21),-V(s35))+Cm1(-V(s3),V(s21),V(s35))+Cm1(V(s3),-V(s21),V(s35))+Cm1(V(s3),V(s21),-V(s35))+Cm1(-V(s4),-V(s5),-V(s25))+Cm1(-V(s4),V(s5),V(s25))+Cm1(V(s4),-V(s5),V(s25))+Cm1(V(s4),V(s5),-V(s25))+Cm1(-V(s4),-V(s43),-V(s48))+Cm1(-V(s4),V(s43),V(s48))+Cm1(V(s4),-V(s43),V(s48))+Cm1(V(s4),V(s43),-V(s48))+Cm1(-V(s3),-V(s26),-V(s30))+Cm1(-V(s3),V(s26),V(s30))+Cm1(V(s3),-V(s26),V(s30))+Cm1(V(s3),V(s26),-V(s30))+Cm1(-V(s12),-V(s27),-V(s39))+Cm1(-V(s12),V(s27),V(s39))+Cm1(V(s12),-V(s27),V(s39))+Cm1(V(s12),V(s27),-V(s39))+Cm1(V(s6),V(s22),V(s30))+Cm1(-V(s6),-V(s22),V(s30))+Cm1(-V(s6),V(s22),-V(s30))+Cm1(V(s6),-V(s22),-V(s30))+Cm1(-V(s26),-V(s24),-V(s32))+Cm1(-V(s26),V(s24),V(s32))+Cm1(V(s26),-V(s24),V(s32))+Cm1(V(s26),V(s24),-V(s32))+Cm1(-V(s1),-V(s28),-V(s29))+Cm1(-V(s1),V(s28),V(s29))+Cm1(V(s1),-V(s28),V(s29))+Cm1(V(s1),V(s28),-V(s29))+Cm1(V(s8),V(s10),V(s42))+Cm1(-V(s8),-V(s10),V(s42))+Cm1(-V(s8),V(s10),-V(s42))+Cm1(V(s8),-V(s10),-V(s42))+Cm1(V(s10),V(s31),V(s34))+Cm1(-V(s10),-V(s31),V(s34))+Cm1(-V(s10),V(s31),-V(s34))+Cm1(V(s10),-V(s31),-V(s34))+Cm1(-V(s11),-V(s17),-V(s18))+Cm1(-V(s11),V(s17),V(s18))+Cm1(V(s11),-V(s17),V(s18))+Cm1(V(s11),V(s17),-V(s18))+Cm1(V(s16),V(s25),V(s33))+Cm1(-V(s16),-V(s25),V(s33))+Cm1(-V(s16),V(s25),-V(s33))+Cm1(V(s16),-V(s25),-V(s33))+Cm1(V(s28),V(s37),V(s44))+Cm1(-V(s28),-V(s37),V(s44))+Cm1(-V(s28),V(s37),-V(s44))+Cm1(V(s28),-V(s37),-V(s44))+Cm1(-V(s3),-V(s49),-V(s50))+Cm1(-V(s3),V(s49),V(s50))+Cm1(V(s3),-V(s49),V(s50))+Cm1(V(s3),V(s49),-V(s50))+Cm1(-V(s25),-V(s36),-V(s38))+Cm1(-V(s25),V(s36),V(s38))+Cm1(V(s25),-V(s36),V(s38))+Cm1(V(s25),V(s36),-V(s38))+Cm1(-V(s10),-V(s11),-V(s14))+Cm1(-V(s10),V(s11),V(s14))+Cm1(V(s10),-V(s11),V(s14))+Cm1(V(s10),V(s11),-V(s14))+Cm1(-V(s27),-V(s30),-V(s40))+Cm1(-V(s27),V(s30),V(s40))+Cm1(V(s27),-V(s30),V(s40))+Cm1(V(s27),V(s30),-V(s40))+Cm1(V(s11),V(s33),V(s34))+Cm1(-V(s11),-V(s33),V(s34))+Cm1(-V(s11),V(s33),-V(s34))+Cm1(V(s11),-V(s33),-V(s34))+Cm1(V(s29),V(s45),V(s48))+Cm1(-V(s29),-V(s45),V(s48))+Cm1(-V(s29),V(s45),-V(s48))+Cm1(V(s29),-V(s45),-V(s48))+Cm1(-V(s2),-V(s19),-V(s21))+Cm1(-V(s2),V(s19),V(s21))+Cm1(V(s2),-V(s19),V(s21))+Cm1(V(s2),V(s19),-V(s21))+Cm1(-V(s17),-V(s36),-V(s39))+Cm1(-V(s17),V(s36),V(s39))+Cm1(V(s17),-V(s36),V(s39))+Cm1(V(s17),V(s36),-V(s39))+Cm1(V(s22),V(s36),V(s19))+Cm1(-V(s22),-V(s36),V(s19))+Cm1(-V(s22),V(s36),-V(s19))+Cm1(V(s22),-V(s36),-V(s19))+Cm1(V(s13),V(s14),V(s34))+Cm1(-V(s13),-V(s14),V(s34))+Cm1(-V(s13),V(s14),-V(s34))+Cm1(V(s13),-V(s14),-V(s34))+Cm1(-V(s29),-V(s40),-V(s41))+Cm1(-V(s29),V(s40),V(s41))+Cm1(V(s29),-V(s40),V(s41))+Cm1(V(s29),V(s40),-V(s41))+Cm1(V(s1),V(s16),V(s44))+Cm1(-V(s1),-V(s16),V(s44))+Cm1(-V(s1),V(s16),-V(s44))+Cm1(V(s1),-V(s16),-V(s44))+Cm1(V(s48),V(s49),V(s50))+Cm1(-V(s48),-V(s49),V(s50))+Cm1(-V(s48),V(s49),-V(s50))+Cm1(V(s48),-V(s49),-V(s50))+Cm1(-V(s12),-V(s20),-V(s31))+Cm1(-V(s12),V(s20),V(s31))+Cm1(V(s12),-V(s20),V(s31))+Cm1(V(s12),V(s20),-V(s31))+Cm1(-V(s7),-V(s41),-V(s46))+Cm1(-V(s7),V(s41),V(s46))+Cm1(V(s7),-V(s41),V(s46))+Cm1(V(s7),V(s41),-V(s46))+Cm1(-V(s9),-V(s26),-V(s40))+Cm1(-V(s9),V(s26),V(s40))+Cm1(V(s9),-V(s26),V(s40))+Cm1(V(s9),V(s26),-V(s40))+Cm1(-V(s1),-V(s7),-V(s32))+Cm1(-V(s1),V(s7),V(s32))+Cm1(V(s1),-V(s7),V(s32))+Cm1(V(s1),V(s7),-V(s32))+Cm1(-V(s9),-V(s13),-V(s19))+Cm1(-V(s9),V(s13),V(s19))+Cm1(V(s9),-V(s13),V(s19))+Cm1(V(s9),V(s13),-V(s19))+Cm1(-V(s37),-V(s16),-V(s39))+Cm1(-V(s37),V(s16),V(s39))+Cm1(V(s37),-V(s16),V(s39))+Cm1(V(s37),V(s16),-V(s39))+Cm1(V(s5),V(s6),V(s13))+Cm1(-V(s5),-V(s6),V(s13))+Cm1(-V(s5),V(s6),-V(s13))+Cm1(V(s5),-V(s6),-V(s13))+Cm1(-V(s15),-V(s42),-V(s44))+Cm1(-V(s15),V(s42),V(s44))+Cm1(V(s15),-V(s42),V(s44))+Cm1(V(s15),V(s42),-V(s44))+Cm1(-V(s6),-V(s35),-V(s49))+Cm1(-V(s6),V(s35),V(s49))+Cm1(V(s6),-V(s35),V(s49))+Cm1(V(s6),V(s35),-V(s49))+Cm1(-V(s23),-V(s33),-V(s47))+Cm1(-V(s23),V(s33),V(s47))+Cm1(V(s23),-V(s33),V(s47))+Cm1(V(s23),V(s33),-V(s47))+Cm1(V(s9),V(s14),V(s20))+Cm1(-V(s9),-V(s14),V(s20))+Cm1(-V(s9),V(s14),-V(s20))+Cm1(V(s9),-V(s14),-V(s20))+Cm1(V(s7),V(s8),V(s15))+Cm1(-V(s7),-V(s8),V(s15))+Cm1(-V(s7),V(s8),-V(s15))+Cm1(V(s7),-V(s8),-V(s15))
+
+.func fs1() = {2*V(a77)*(-1)*pow(1+V(s1),1)*pow(1+V(s28),2)*pow(1+V(s29),2)+2*V(a78)*(-1)*pow(1+V(s1),1)*pow(1-V(s28),2)*pow(1-V(s29),2)+2*V(a79)*(1)*pow(1-V(s1),1)*pow(1+V(s28),2)*pow(1-V(s29),2)+2*V(a80)*(1)*pow(1-V(s1),1)*pow(1-V(s28),2)*pow(1+V(s29),2)+2*V(a145)*(1)*pow(1-V(s1),1)*pow(1-V(s16),2)*pow(1-V(s44),2)+2*V(a146)*(-1)*pow(1+V(s1),1)*pow(1+V(s16),2)*pow(1-V(s44),2)+2*V(a147)*(-1)*pow(1+V(s1),1)*pow(1-V(s16),2)*pow(1+V(s44),2)+2*V(a148)*(1)*pow(1-V(s1),1)*pow(1+V(s16),2)*pow(1+V(s44),2)+2*V(a165)*(-1)*pow(1+V(s1),1)*pow(1+V(s7),2)*pow(1+V(s32),2)+2*V(a166)*(-1)*pow(1+V(s1),1)*pow(1-V(s7),2)*pow(1-V(s32),2)+2*V(a167)*(1)*pow(1-V(s1),1)*pow(1+V(s7),2)*pow(1-V(s32),2)+2*V(a168)*(1)*pow(1-V(s1),1)*pow(1-V(s7),2)*pow(1+V(s32),2)}
+.func fs2() = {2*V(a5)*(-1)*pow(1+V(s2),1)*pow(1+V(s28),2)*pow(1+V(s35),2)+2*V(a6)*(-1)*pow(1+V(s2),1)*pow(1-V(s28),2)*pow(1-V(s35),2)+2*V(a7)*(1)*pow(1-V(s2),1)*pow(1+V(s28),2)*pow(1-V(s35),2)+2*V(a8)*(1)*pow(1-V(s2),1)*pow(1-V(s28),2)*pow(1+V(s35),2)+2*V(a37)*(1)*pow(1-V(s2),1)*pow(1-V(s37),2)*pow(1-V(s38),2)+2*V(a38)*(-1)*pow(1+V(s2),1)*pow(1+V(s37),2)*pow(1-V(s38),2)+2*V(a39)*(-1)*pow(1+V(s2),1)*pow(1-V(s37),2)*pow(1+V(s38),2)+2*V(a40)*(1)*pow(1-V(s2),1)*pow(1+V(s37),2)*pow(1+V(s38),2)+2*V(a125)*(-1)*pow(1+V(s2),1)*pow(1+V(s19),2)*pow(1+V(s21),2)+2*V(a126)*(-1)*pow(1+V(s2),1)*pow(1-V(s19),2)*pow(1-V(s21),2)+2*V(a127)*(1)*pow(1-V(s2),1)*pow(1+V(s19),2)*pow(1-V(s21),2)+2*V(a128)*(1)*pow(1-V(s2),1)*pow(1-V(s19),2)*pow(1+V(s21),2)}
+.func fs3() = {2*V(a49)*(-1)*pow(1+V(s3),1)*pow(1+V(s21),2)*pow(1+V(s35),2)+2*V(a50)*(-1)*pow(1+V(s3),1)*pow(1-V(s21),2)*pow(1-V(s35),2)+2*V(a51)*(1)*pow(1-V(s3),1)*pow(1+V(s21),2)*pow(1-V(s35),2)+2*V(a52)*(1)*pow(1-V(s3),1)*pow(1-V(s21),2)*pow(1+V(s35),2)+2*V(a61)*(-1)*pow(1+V(s3),1)*pow(1+V(s26),2)*pow(1+V(s30),2)+2*V(a62)*(-1)*pow(1+V(s3),1)*pow(1-V(s26),2)*pow(1-V(s30),2)+2*V(a63)*(1)*pow(1-V(s3),1)*pow(1+V(s26),2)*pow(1-V(s30),2)+2*V(a64)*(1)*pow(1-V(s3),1)*pow(1-V(s26),2)*pow(1+V(s30),2)+2*V(a101)*(-1)*pow(1+V(s3),1)*pow(1+V(s49),2)*pow(1+V(s50),2)+2*V(a102)*(-1)*pow(1+V(s3),1)*pow(1-V(s49),2)*pow(1-V(s50),2)+2*V(a103)*(1)*pow(1-V(s3),1)*pow(1+V(s49),2)*pow(1-V(s50),2)+2*V(a104)*(1)*pow(1-V(s3),1)*pow(1-V(s49),2)*pow(1+V(s50),2)}
+.func fs4() = {2*V(a29)*(1)*pow(1-V(s4),1)*pow(1-V(s43),2)*pow(1-V(s46),2)+2*V(a30)*(-1)*pow(1+V(s4),1)*pow(1+V(s43),2)*pow(1-V(s46),2)+2*V(a31)*(-1)*pow(1+V(s4),1)*pow(1-V(s43),2)*pow(1+V(s46),2)+2*V(a32)*(1)*pow(1-V(s4),1)*pow(1+V(s43),2)*pow(1+V(s46),2)+2*V(a53)*(-1)*pow(1+V(s4),1)*pow(1+V(s5),2)*pow(1+V(s25),2)+2*V(a54)*(-1)*pow(1+V(s4),1)*pow(1-V(s5),2)*pow(1-V(s25),2)+2*V(a55)*(1)*pow(1-V(s4),1)*pow(1+V(s5),2)*pow(1-V(s25),2)+2*V(a56)*(1)*pow(1-V(s4),1)*pow(1-V(s5),2)*pow(1+V(s25),2)+2*V(a57)*(-1)*pow(1+V(s4),1)*pow(1+V(s43),2)*pow(1+V(s48),2)+2*V(a58)*(-1)*pow(1+V(s4),1)*pow(1-V(s43),2)*pow(1-V(s48),2)+2*V(a59)*(1)*pow(1-V(s4),1)*pow(1+V(s43),2)*pow(1-V(s48),2)+2*V(a60)*(1)*pow(1-V(s4),1)*pow(1-V(s43),2)*pow(1+V(s48),2)}
+.func fs5() = {2*V(a13)*(1)*pow(1-V(s5),1)*pow(1-V(s18),2)*pow(1-V(s22),2)+2*V(a14)*(-1)*pow(1+V(s5),1)*pow(1+V(s18),2)*pow(1-V(s22),2)+2*V(a15)*(-1)*pow(1+V(s5),1)*pow(1-V(s18),2)*pow(1+V(s22),2)+2*V(a16)*(1)*pow(1-V(s5),1)*pow(1+V(s18),2)*pow(1+V(s22),2)+2*V(a53)*(-1)*pow(1+V(s4),2)*pow(1+V(s5),1)*pow(1+V(s25),2)+2*V(a54)*(1)*pow(1+V(s4),2)*pow(1-V(s5),1)*pow(1-V(s25),2)+2*V(a55)*(-1)*pow(1-V(s4),2)*pow(1+V(s5),1)*pow(1-V(s25),2)+2*V(a56)*(1)*pow(1-V(s4),2)*pow(1-V(s5),1)*pow(1+V(s25),2)+2*V(a177)*(1)*pow(1-V(s5),1)*pow(1-V(s6),2)*pow(1-V(s13),2)+2*V(a178)*(-1)*pow(1+V(s5),1)*pow(1+V(s6),2)*pow(1-V(s13),2)+2*V(a179)*(-1)*pow(1+V(s5),1)*pow(1-V(s6),2)*pow(1+V(s13),2)+2*V(a180)*(1)*pow(1-V(s5),1)*pow(1+V(s6),2)*pow(1+V(s13),2)}
+.func fs6() = {2*V(a69)*(1)*pow(1-V(s6),1)*pow(1-V(s22),2)*pow(1-V(s30),2)+2*V(a70)*(-1)*pow(1+V(s6),1)*pow(1+V(s22),2)*pow(1-V(s30),2)+2*V(a71)*(-1)*pow(1+V(s6),1)*pow(1-V(s22),2)*pow(1+V(s30),2)+2*V(a72)*(1)*pow(1-V(s6),1)*pow(1+V(s22),2)*pow(1+V(s30),2)+2*V(a177)*(1)*pow(1-V(s5),2)*pow(1-V(s6),1)*pow(1-V(s13),2)+2*V(a178)*(-1)*pow(1+V(s5),2)*pow(1+V(s6),1)*pow(1-V(s13),2)+2*V(a179)*(1)*pow(1+V(s5),2)*pow(1-V(s6),1)*pow(1+V(s13),2)+2*V(a180)*(-1)*pow(1-V(s5),2)*pow(1+V(s6),1)*pow(1+V(s13),2)+2*V(a185)*(-1)*pow(1+V(s6),1)*pow(1+V(s35),2)*pow(1+V(s49),2)+2*V(a186)*(-1)*pow(1+V(s6),1)*pow(1-V(s35),2)*pow(1-V(s49),2)+2*V(a187)*(1)*pow(1-V(s6),1)*pow(1+V(s35),2)*pow(1-V(s49),2)+2*V(a188)*(1)*pow(1-V(s6),1)*pow(1-V(s35),2)*pow(1+V(s49),2)}
+.func fs7() = {2*V(a157)*(-1)*pow(1+V(s7),1)*pow(1+V(s41),2)*pow(1+V(s46),2)+2*V(a158)*(-1)*pow(1+V(s7),1)*pow(1-V(s41),2)*pow(1-V(s46),2)+2*V(a159)*(1)*pow(1-V(s7),1)*pow(1+V(s41),2)*pow(1-V(s46),2)+2*V(a160)*(1)*pow(1-V(s7),1)*pow(1-V(s41),2)*pow(1+V(s46),2)+2*V(a165)*(-1)*pow(1+V(s1),2)*pow(1+V(s7),1)*pow(1+V(s32),2)+2*V(a166)*(1)*pow(1+V(s1),2)*pow(1-V(s7),1)*pow(1-V(s32),2)+2*V(a167)*(-1)*pow(1-V(s1),2)*pow(1+V(s7),1)*pow(1-V(s32),2)+2*V(a168)*(1)*pow(1-V(s1),2)*pow(1-V(s7),1)*pow(1+V(s32),2)+2*V(a197)*(1)*pow(1-V(s7),1)*pow(1-V(s8),2)*pow(1-V(s15),2)+2*V(a198)*(-1)*pow(1+V(s7),1)*pow(1+V(s8),2)*pow(1-V(s15),2)+2*V(a199)*(-1)*pow(1+V(s7),1)*pow(1-V(s8),2)*pow(1+V(s15),2)+2*V(a200)*(1)*pow(1-V(s7),1)*pow(1+V(s8),2)*pow(1+V(s15),2)}
+.func fs8() = {2*V(a1)*(1)*pow(1-V(s8),1)*pow(1-V(s18),2)*pow(1-V(s23),2)+2*V(a2)*(-1)*pow(1+V(s8),1)*pow(1+V(s18),2)*pow(1-V(s23),2)+2*V(a3)*(-1)*pow(1+V(s8),1)*pow(1-V(s18),2)*pow(1+V(s23),2)+2*V(a4)*(1)*pow(1-V(s8),1)*pow(1+V(s18),2)*pow(1+V(s23),2)+2*V(a81)*(1)*pow(1-V(s8),1)*pow(1-V(s10),2)*pow(1-V(s42),2)+2*V(a82)*(-1)*pow(1+V(s8),1)*pow(1+V(s10),2)*pow(1-V(s42),2)+2*V(a83)*(-1)*pow(1+V(s8),1)*pow(1-V(s10),2)*pow(1+V(s42),2)+2*V(a84)*(1)*pow(1-V(s8),1)*pow(1+V(s10),2)*pow(1+V(s42),2)+2*V(a197)*(1)*pow(1-V(s7),2)*pow(1-V(s8),1)*pow(1-V(s15),2)+2*V(a198)*(-1)*pow(1+V(s7),2)*pow(1+V(s8),1)*pow(1-V(s15),2)+2*V(a199)*(1)*pow(1+V(s7),2)*pow(1-V(s8),1)*pow(1+V(s15),2)+2*V(a200)*(-1)*pow(1-V(s7),2)*pow(1+V(s8),1)*pow(1+V(s15),2)}
+.func fs9() = {2*V(a161)*(-1)*pow(1+V(s9),1)*pow(1+V(s26),2)*pow(1+V(s40),2)+2*V(a162)*(-1)*pow(1+V(s9),1)*pow(1-V(s26),2)*pow(1-V(s40),2)+2*V(a163)*(1)*pow(1-V(s9),1)*pow(1+V(s26),2)*pow(1-V(s40),2)+2*V(a164)*(1)*pow(1-V(s9),1)*pow(1-V(s26),2)*pow(1+V(s40),2)+2*V(a169)*(-1)*pow(1+V(s9),1)*pow(1+V(s13),2)*pow(1+V(s19),2)+2*V(a170)*(-1)*pow(1+V(s9),1)*pow(1-V(s13),2)*pow(1-V(s19),2)+2*V(a171)*(1)*pow(1-V(s9),1)*pow(1+V(s13),2)*pow(1-V(s19),2)+2*V(a172)*(1)*pow(1-V(s9),1)*pow(1-V(s13),2)*pow(1+V(s19),2)+2*V(a193)*(1)*pow(1-V(s9),1)*pow(1-V(s14),2)*pow(1-V(s20),2)+2*V(a194)*(-1)*pow(1+V(s9),1)*pow(1+V(s14),2)*pow(1-V(s20),2)+2*V(a195)*(-1)*pow(1+V(s9),1)*pow(1-V(s14),2)*pow(1+V(s20),2)+2*V(a196)*(1)*pow(1-V(s9),1)*pow(1+V(s14),2)*pow(1+V(s20),2)}
+.func fs10() = {2*V(a81)*(1)*pow(1-V(s8),2)*pow(1-V(s10),1)*pow(1-V(s42),2)+2*V(a82)*(-1)*pow(1+V(s8),2)*pow(1+V(s10),1)*pow(1-V(s42),2)+2*V(a83)*(1)*pow(1+V(s8),2)*pow(1-V(s10),1)*pow(1+V(s42),2)+2*V(a84)*(-1)*pow(1-V(s8),2)*pow(1+V(s10),1)*pow(1+V(s42),2)+2*V(a85)*(1)*pow(1-V(s10),1)*pow(1-V(s31),2)*pow(1-V(s34),2)+2*V(a86)*(-1)*pow(1+V(s10),1)*pow(1+V(s31),2)*pow(1-V(s34),2)+2*V(a87)*(-1)*pow(1+V(s10),1)*pow(1-V(s31),2)*pow(1+V(s34),2)+2*V(a88)*(1)*pow(1-V(s10),1)*pow(1+V(s31),2)*pow(1+V(s34),2)+2*V(a109)*(-1)*pow(1+V(s10),1)*pow(1+V(s11),2)*pow(1+V(s14),2)+2*V(a110)*(-1)*pow(1+V(s10),1)*pow(1-V(s11),2)*pow(1-V(s14),2)+2*V(a111)*(1)*pow(1-V(s10),1)*pow(1+V(s11),2)*pow(1-V(s14),2)+2*V(a112)*(1)*pow(1-V(s10),1)*pow(1-V(s11),2)*pow(1+V(s14),2)}
+.func fs11() = {2*V(a89)*(-1)*pow(1+V(s11),1)*pow(1+V(s17),2)*pow(1+V(s18),2)+2*V(a90)*(-1)*pow(1+V(s11),1)*pow(1-V(s17),2)*pow(1-V(s18),2)+2*V(a91)*(1)*pow(1-V(s11),1)*pow(1+V(s17),2)*pow(1-V(s18),2)+2*V(a92)*(1)*pow(1-V(s11),1)*pow(1-V(s17),2)*pow(1+V(s18),2)+2*V(a109)*(-1)*pow(1+V(s10),2)*pow(1+V(s11),1)*pow(1+V(s14),2)+2*V(a110)*(1)*pow(1+V(s10),2)*pow(1-V(s11),1)*pow(1-V(s14),2)+2*V(a111)*(-1)*pow(1-V(s10),2)*pow(1+V(s11),1)*pow(1-V(s14),2)+2*V(a112)*(1)*pow(1-V(s10),2)*pow(1-V(s11),1)*pow(1+V(s14),2)+2*V(a117)*(1)*pow(1-V(s11),1)*pow(1-V(s33),2)*pow(1-V(s34),2)+2*V(a118)*(-1)*pow(1+V(s11),1)*pow(1+V(s33),2)*pow(1-V(s34),2)+2*V(a119)*(-1)*pow(1+V(s11),1)*pow(1-V(s33),2)*pow(1+V(s34),2)+2*V(a120)*(1)*pow(1-V(s11),1)*pow(1+V(s33),2)*pow(1+V(s34),2)}
+.func fs12() = {2*V(a21)*(1)*pow(1-V(s12),1)*pow(1-V(s15),2)*pow(1-V(s21),2)+2*V(a22)*(-1)*pow(1+V(s12),1)*pow(1+V(s15),2)*pow(1-V(s21),2)+2*V(a23)*(-1)*pow(1+V(s12),1)*pow(1-V(s15),2)*pow(1+V(s21),2)+2*V(a24)*(1)*pow(1-V(s12),1)*pow(1+V(s15),2)*pow(1+V(s21),2)+2*V(a65)*(-1)*pow(1+V(s12),1)*pow(1+V(s27),2)*pow(1+V(s39),2)+2*V(a66)*(-1)*pow(1+V(s12),1)*pow(1-V(s27),2)*pow(1-V(s39),2)+2*V(a67)*(1)*pow(1-V(s12),1)*pow(1+V(s27),2)*pow(1-V(s39),2)+2*V(a68)*(1)*pow(1-V(s12),1)*pow(1-V(s27),2)*pow(1+V(s39),2)+2*V(a153)*(-1)*pow(1+V(s12),1)*pow(1+V(s20),2)*pow(1+V(s31),2)+2*V(a154)*(-1)*pow(1+V(s12),1)*pow(1-V(s20),2)*pow(1-V(s31),2)+2*V(a155)*(1)*pow(1-V(s12),1)*pow(1+V(s20),2)*pow(1-V(s31),2)+2*V(a156)*(1)*pow(1-V(s12),1)*pow(1-V(s20),2)*pow(1+V(s31),2)}
+.func fs13() = {2*V(a137)*(1)*pow(1-V(s13),1)*pow(1-V(s14),2)*pow(1-V(s34),2)+2*V(a138)*(-1)*pow(1+V(s13),1)*pow(1+V(s14),2)*pow(1-V(s34),2)+2*V(a139)*(-1)*pow(1+V(s13),1)*pow(1-V(s14),2)*pow(1+V(s34),2)+2*V(a140)*(1)*pow(1-V(s13),1)*pow(1+V(s14),2)*pow(1+V(s34),2)+2*V(a169)*(-1)*pow(1+V(s9),2)*pow(1+V(s13),1)*pow(1+V(s19),2)+2*V(a170)*(1)*pow(1+V(s9),2)*pow(1-V(s13),1)*pow(1-V(s19),2)+2*V(a171)*(-1)*pow(1-V(s9),2)*pow(1+V(s13),1)*pow(1-V(s19),2)+2*V(a172)*(1)*pow(1-V(s9),2)*pow(1-V(s13),1)*pow(1+V(s19),2)+2*V(a177)*(1)*pow(1-V(s5),2)*pow(1-V(s6),2)*pow(1-V(s13),1)+2*V(a178)*(1)*pow(1+V(s5),2)*pow(1+V(s6),2)*pow(1-V(s13),1)+2*V(a179)*(-1)*pow(1+V(s5),2)*pow(1-V(s6),2)*pow(1+V(s13),1)+2*V(a180)*(-1)*pow(1-V(s5),2)*pow(1+V(s6),2)*pow(1+V(s13),1)}
+.func fs14() = {2*V(a109)*(-1)*pow(1+V(s10),2)*pow(1+V(s11),2)*pow(1+V(s14),1)+2*V(a110)*(1)*pow(1+V(s10),2)*pow(1-V(s11),2)*pow(1-V(s14),1)+2*V(a111)*(1)*pow(1-V(s10),2)*pow(1+V(s11),2)*pow(1-V(s14),1)+2*V(a112)*(-1)*pow(1-V(s10),2)*pow(1-V(s11),2)*pow(1+V(s14),1)+2*V(a137)*(1)*pow(1-V(s13),2)*pow(1-V(s14),1)*pow(1-V(s34),2)+2*V(a138)*(-1)*pow(1+V(s13),2)*pow(1+V(s14),1)*pow(1-V(s34),2)+2*V(a139)*(1)*pow(1+V(s13),2)*pow(1-V(s14),1)*pow(1+V(s34),2)+2*V(a140)*(-1)*pow(1-V(s13),2)*pow(1+V(s14),1)*pow(1+V(s34),2)+2*V(a193)*(1)*pow(1-V(s9),2)*pow(1-V(s14),1)*pow(1-V(s20),2)+2*V(a194)*(-1)*pow(1+V(s9),2)*pow(1+V(s14),1)*pow(1-V(s20),2)+2*V(a195)*(1)*pow(1+V(s9),2)*pow(1-V(s14),1)*pow(1+V(s20),2)+2*V(a196)*(-1)*pow(1-V(s9),2)*pow(1+V(s14),1)*pow(1+V(s20),2)}
+.func fs15() = {2*V(a21)*(1)*pow(1-V(s12),2)*pow(1-V(s15),1)*pow(1-V(s21),2)+2*V(a22)*(-1)*pow(1+V(s12),2)*pow(1+V(s15),1)*pow(1-V(s21),2)+2*V(a23)*(1)*pow(1+V(s12),2)*pow(1-V(s15),1)*pow(1+V(s21),2)+2*V(a24)*(-1)*pow(1-V(s12),2)*pow(1+V(s15),1)*pow(1+V(s21),2)+2*V(a181)*(-1)*pow(1+V(s15),1)*pow(1+V(s42),2)*pow(1+V(s44),2)+2*V(a182)*(-1)*pow(1+V(s15),1)*pow(1-V(s42),2)*pow(1-V(s44),2)+2*V(a183)*(1)*pow(1-V(s15),1)*pow(1+V(s42),2)*pow(1-V(s44),2)+2*V(a184)*(1)*pow(1-V(s15),1)*pow(1-V(s42),2)*pow(1+V(s44),2)+2*V(a197)*(1)*pow(1-V(s7),2)*pow(1-V(s8),2)*pow(1-V(s15),1)+2*V(a198)*(1)*pow(1+V(s7),2)*pow(1+V(s8),2)*pow(1-V(s15),1)+2*V(a199)*(-1)*pow(1+V(s7),2)*pow(1-V(s8),2)*pow(1+V(s15),1)+2*V(a200)*(-1)*pow(1-V(s7),2)*pow(1+V(s8),2)*pow(1+V(s15),1)}
+.func fs16() = {2*V(a93)*(1)*pow(1-V(s16),1)*pow(1-V(s25),2)*pow(1-V(s33),2)+2*V(a94)*(-1)*pow(1+V(s16),1)*pow(1+V(s25),2)*pow(1-V(s33),2)+2*V(a95)*(-1)*pow(1+V(s16),1)*pow(1-V(s25),2)*pow(1+V(s33),2)+2*V(a96)*(1)*pow(1-V(s16),1)*pow(1+V(s25),2)*pow(1+V(s33),2)+2*V(a145)*(1)*pow(1-V(s1),2)*pow(1-V(s16),1)*pow(1-V(s44),2)+2*V(a146)*(-1)*pow(1+V(s1),2)*pow(1+V(s16),1)*pow(1-V(s44),2)+2*V(a147)*(1)*pow(1+V(s1),2)*pow(1-V(s16),1)*pow(1+V(s44),2)+2*V(a148)*(-1)*pow(1-V(s1),2)*pow(1+V(s16),1)*pow(1+V(s44),2)+2*V(a173)*(-1)*pow(1+V(s37),2)*pow(1+V(s16),1)*pow(1+V(s39),2)+2*V(a174)*(1)*pow(1+V(s37),2)*pow(1-V(s16),1)*pow(1-V(s39),2)+2*V(a175)*(-1)*pow(1-V(s37),2)*pow(1+V(s16),1)*pow(1-V(s39),2)+2*V(a176)*(1)*pow(1-V(s37),2)*pow(1-V(s16),1)*pow(1+V(s39),2)}
+.func fs17() = {2*V(a9)*(-1)*pow(1+V(s17),1)*pow(1+V(s31),2)*pow(1+V(s45),2)+2*V(a10)*(-1)*pow(1+V(s17),1)*pow(1-V(s31),2)*pow(1-V(s45),2)+2*V(a11)*(1)*pow(1-V(s17),1)*pow(1+V(s31),2)*pow(1-V(s45),2)+2*V(a12)*(1)*pow(1-V(s17),1)*pow(1-V(s31),2)*pow(1+V(s45),2)+2*V(a89)*(-1)*pow(1+V(s11),2)*pow(1+V(s17),1)*pow(1+V(s18),2)+2*V(a90)*(1)*pow(1+V(s11),2)*pow(1-V(s17),1)*pow(1-V(s18),2)+2*V(a91)*(-1)*pow(1-V(s11),2)*pow(1+V(s17),1)*pow(1-V(s18),2)+2*V(a92)*(1)*pow(1-V(s11),2)*pow(1-V(s17),1)*pow(1+V(s18),2)+2*V(a129)*(-1)*pow(1+V(s17),1)*pow(1+V(s36),2)*pow(1+V(s39),2)+2*V(a130)*(-1)*pow(1+V(s17),1)*pow(1-V(s36),2)*pow(1-V(s39),2)+2*V(a131)*(1)*pow(1-V(s17),1)*pow(1+V(s36),2)*pow(1-V(s39),2)+2*V(a132)*(1)*pow(1-V(s17),1)*pow(1-V(s36),2)*pow(1+V(s39),2)}
+.func fs18() = {2*V(a1)*(1)*pow(1-V(s8),2)*pow(1-V(s18),1)*pow(1-V(s23),2)+2*V(a2)*(-1)*pow(1+V(s8),2)*pow(1+V(s18),1)*pow(1-V(s23),2)+2*V(a3)*(1)*pow(1+V(s8),2)*pow(1-V(s18),1)*pow(1+V(s23),2)+2*V(a4)*(-1)*pow(1-V(s8),2)*pow(1+V(s18),1)*pow(1+V(s23),2)+2*V(a13)*(1)*pow(1-V(s5),2)*pow(1-V(s18),1)*pow(1-V(s22),2)+2*V(a14)*(-1)*pow(1+V(s5),2)*pow(1+V(s18),1)*pow(1-V(s22),2)+2*V(a15)*(1)*pow(1+V(s5),2)*pow(1-V(s18),1)*pow(1+V(s22),2)+2*V(a16)*(-1)*pow(1-V(s5),2)*pow(1+V(s18),1)*pow(1+V(s22),2)+2*V(a89)*(-1)*pow(1+V(s11),2)*pow(1+V(s17),2)*pow(1+V(s18),1)+2*V(a90)*(1)*pow(1+V(s11),2)*pow(1-V(s17),2)*pow(1-V(s18),1)+2*V(a91)*(1)*pow(1-V(s11),2)*pow(1+V(s17),2)*pow(1-V(s18),1)+2*V(a92)*(-1)*pow(1-V(s11),2)*pow(1-V(s17),2)*pow(1+V(s18),1)}
+.func fs19() = {2*V(a125)*(-1)*pow(1+V(s2),2)*pow(1+V(s19),1)*pow(1+V(s21),2)+2*V(a126)*(1)*pow(1+V(s2),2)*pow(1-V(s19),1)*pow(1-V(s21),2)+2*V(a127)*(-1)*pow(1-V(s2),2)*pow(1+V(s19),1)*pow(1-V(s21),2)+2*V(a128)*(1)*pow(1-V(s2),2)*pow(1-V(s19),1)*pow(1+V(s21),2)+2*V(a133)*(1)*pow(1-V(s22),2)*pow(1-V(s36),2)*pow(1-V(s19),1)+2*V(a134)*(1)*pow(1+V(s22),2)*pow(1+V(s36),2)*pow(1-V(s19),1)+2*V(a135)*(-1)*pow(1+V(s22),2)*pow(1-V(s36),2)*pow(1+V(s19),1)+2*V(a136)*(-1)*pow(1-V(s22),2)*pow(1+V(s36),2)*pow(1+V(s19),1)+2*V(a169)*(-1)*pow(1+V(s9),2)*pow(1+V(s13),2)*pow(1+V(s19),1)+2*V(a170)*(1)*pow(1+V(s9),2)*pow(1-V(s13),2)*pow(1-V(s19),1)+2*V(a171)*(1)*pow(1-V(s9),2)*pow(1+V(s13),2)*pow(1-V(s19),1)+2*V(a172)*(-1)*pow(1-V(s9),2)*pow(1-V(s13),2)*pow(1+V(s19),1)}
+.func fs20() = {2*V(a33)*(1)*pow(1-V(s20),1)*pow(1-V(s24),2)*pow(1-V(s41),2)+2*V(a34)*(-1)*pow(1+V(s20),1)*pow(1+V(s24),2)*pow(1-V(s41),2)+2*V(a35)*(-1)*pow(1+V(s20),1)*pow(1-V(s24),2)*pow(1+V(s41),2)+2*V(a36)*(1)*pow(1-V(s20),1)*pow(1+V(s24),2)*pow(1+V(s41),2)+2*V(a153)*(-1)*pow(1+V(s12),2)*pow(1+V(s20),1)*pow(1+V(s31),2)+2*V(a154)*(1)*pow(1+V(s12),2)*pow(1-V(s20),1)*pow(1-V(s31),2)+2*V(a155)*(-1)*pow(1-V(s12),2)*pow(1+V(s20),1)*pow(1-V(s31),2)+2*V(a156)*(1)*pow(1-V(s12),2)*pow(1-V(s20),1)*pow(1+V(s31),2)+2*V(a193)*(1)*pow(1-V(s9),2)*pow(1-V(s14),2)*pow(1-V(s20),1)+2*V(a194)*(1)*pow(1+V(s9),2)*pow(1+V(s14),2)*pow(1-V(s20),1)+2*V(a195)*(-1)*pow(1+V(s9),2)*pow(1-V(s14),2)*pow(1+V(s20),1)+2*V(a196)*(-1)*pow(1-V(s9),2)*pow(1+V(s14),2)*pow(1+V(s20),1)}
+.func fs21() = {2*V(a21)*(1)*pow(1-V(s12),2)*pow(1-V(s15),2)*pow(1-V(s21),1)+2*V(a22)*(1)*pow(1+V(s12),2)*pow(1+V(s15),2)*pow(1-V(s21),1)+2*V(a23)*(-1)*pow(1+V(s12),2)*pow(1-V(s15),2)*pow(1+V(s21),1)+2*V(a24)*(-1)*pow(1-V(s12),2)*pow(1+V(s15),2)*pow(1+V(s21),1)+2*V(a49)*(-1)*pow(1+V(s3),2)*pow(1+V(s21),1)*pow(1+V(s35),2)+2*V(a50)*(1)*pow(1+V(s3),2)*pow(1-V(s21),1)*pow(1-V(s35),2)+2*V(a51)*(-1)*pow(1-V(s3),2)*pow(1+V(s21),1)*pow(1-V(s35),2)+2*V(a52)*(1)*pow(1-V(s3),2)*pow(1-V(s21),1)*pow(1+V(s35),2)+2*V(a125)*(-1)*pow(1+V(s2),2)*pow(1+V(s19),2)*pow(1+V(s21),1)+2*V(a126)*(1)*pow(1+V(s2),2)*pow(1-V(s19),2)*pow(1-V(s21),1)+2*V(a127)*(1)*pow(1-V(s2),2)*pow(1+V(s19),2)*pow(1-V(s21),1)+2*V(a128)*(-1)*pow(1-V(s2),2)*pow(1-V(s19),2)*pow(1+V(s21),1)}
+.func fs22() = {2*V(a13)*(1)*pow(1-V(s5),2)*pow(1-V(s18),2)*pow(1-V(s22),1)+2*V(a14)*(1)*pow(1+V(s5),2)*pow(1+V(s18),2)*pow(1-V(s22),1)+2*V(a15)*(-1)*pow(1+V(s5),2)*pow(1-V(s18),2)*pow(1+V(s22),1)+2*V(a16)*(-1)*pow(1-V(s5),2)*pow(1+V(s18),2)*pow(1+V(s22),1)+2*V(a69)*(1)*pow(1-V(s6),2)*pow(1-V(s22),1)*pow(1-V(s30),2)+2*V(a70)*(-1)*pow(1+V(s6),2)*pow(1+V(s22),1)*pow(1-V(s30),2)+2*V(a71)*(1)*pow(1+V(s6),2)*pow(1-V(s22),1)*pow(1+V(s30),2)+2*V(a72)*(-1)*pow(1-V(s6),2)*pow(1+V(s22),1)*pow(1+V(s30),2)+2*V(a133)*(1)*pow(1-V(s22),1)*pow(1-V(s36),2)*pow(1-V(s19),2)+2*V(a134)*(-1)*pow(1+V(s22),1)*pow(1+V(s36),2)*pow(1-V(s19),2)+2*V(a135)*(-1)*pow(1+V(s22),1)*pow(1-V(s36),2)*pow(1+V(s19),2)+2*V(a136)*(1)*pow(1-V(s22),1)*pow(1+V(s36),2)*pow(1+V(s19),2)}
+.func fs23() = {2*V(a1)*(1)*pow(1-V(s8),2)*pow(1-V(s18),2)*pow(1-V(s23),1)+2*V(a2)*(1)*pow(1+V(s8),2)*pow(1+V(s18),2)*pow(1-V(s23),1)+2*V(a3)*(-1)*pow(1+V(s8),2)*pow(1-V(s18),2)*pow(1+V(s23),1)+2*V(a4)*(-1)*pow(1-V(s8),2)*pow(1+V(s18),2)*pow(1+V(s23),1)+2*V(a25)*(-1)*pow(1+V(s23),1)*pow(1+V(s32),2)*pow(1+V(s47),2)+2*V(a26)*(-1)*pow(1+V(s23),1)*pow(1-V(s32),2)*pow(1-V(s47),2)+2*V(a27)*(1)*pow(1-V(s23),1)*pow(1+V(s32),2)*pow(1-V(s47),2)+2*V(a28)*(1)*pow(1-V(s23),1)*pow(1-V(s32),2)*pow(1+V(s47),2)+2*V(a189)*(-1)*pow(1+V(s23),1)*pow(1+V(s33),2)*pow(1+V(s47),2)+2*V(a190)*(-1)*pow(1+V(s23),1)*pow(1-V(s33),2)*pow(1-V(s47),2)+2*V(a191)*(1)*pow(1-V(s23),1)*pow(1+V(s33),2)*pow(1-V(s47),2)+2*V(a192)*(1)*pow(1-V(s23),1)*pow(1-V(s33),2)*pow(1+V(s47),2)}
+.func fs24() = {2*V(a33)*(1)*pow(1-V(s20),2)*pow(1-V(s24),1)*pow(1-V(s41),2)+2*V(a34)*(-1)*pow(1+V(s20),2)*pow(1+V(s24),1)*pow(1-V(s41),2)+2*V(a35)*(1)*pow(1+V(s20),2)*pow(1-V(s24),1)*pow(1+V(s41),2)+2*V(a36)*(-1)*pow(1-V(s20),2)*pow(1+V(s24),1)*pow(1+V(s41),2)+2*V(a45)*(-1)*pow(1+V(s24),1)*pow(1+V(s45),2)*pow(1+V(s50),2)+2*V(a46)*(-1)*pow(1+V(s24),1)*pow(1-V(s45),2)*pow(1-V(s50),2)+2*V(a47)*(1)*pow(1-V(s24),1)*pow(1+V(s45),2)*pow(1-V(s50),2)+2*V(a48)*(1)*pow(1-V(s24),1)*pow(1-V(s45),2)*pow(1+V(s50),2)+2*V(a73)*(-1)*pow(1+V(s26),2)*pow(1+V(s24),1)*pow(1+V(s32),2)+2*V(a74)*(1)*pow(1+V(s26),2)*pow(1-V(s24),1)*pow(1-V(s32),2)+2*V(a75)*(-1)*pow(1-V(s26),2)*pow(1+V(s24),1)*pow(1-V(s32),2)+2*V(a76)*(1)*pow(1-V(s26),2)*pow(1-V(s24),1)*pow(1+V(s32),2)}
+.func fs25() = {2*V(a53)*(-1)*pow(1+V(s4),2)*pow(1+V(s5),2)*pow(1+V(s25),1)+2*V(a54)*(1)*pow(1+V(s4),2)*pow(1-V(s5),2)*pow(1-V(s25),1)+2*V(a55)*(1)*pow(1-V(s4),2)*pow(1+V(s5),2)*pow(1-V(s25),1)+2*V(a56)*(-1)*pow(1-V(s4),2)*pow(1-V(s5),2)*pow(1+V(s25),1)+2*V(a93)*(1)*pow(1-V(s16),2)*pow(1-V(s25),1)*pow(1-V(s33),2)+2*V(a94)*(-1)*pow(1+V(s16),2)*pow(1+V(s25),1)*pow(1-V(s33),2)+2*V(a95)*(1)*pow(1+V(s16),2)*pow(1-V(s25),1)*pow(1+V(s33),2)+2*V(a96)*(-1)*pow(1-V(s16),2)*pow(1+V(s25),1)*pow(1+V(s33),2)+2*V(a105)*(-1)*pow(1+V(s25),1)*pow(1+V(s36),2)*pow(1+V(s38),2)+2*V(a106)*(-1)*pow(1+V(s25),1)*pow(1-V(s36),2)*pow(1-V(s38),2)+2*V(a107)*(1)*pow(1-V(s25),1)*pow(1+V(s36),2)*pow(1-V(s38),2)+2*V(a108)*(1)*pow(1-V(s25),1)*pow(1-V(s36),2)*pow(1+V(s38),2)}
+.func fs26() = {2*V(a61)*(-1)*pow(1+V(s3),2)*pow(1+V(s26),1)*pow(1+V(s30),2)+2*V(a62)*(1)*pow(1+V(s3),2)*pow(1-V(s26),1)*pow(1-V(s30),2)+2*V(a63)*(-1)*pow(1-V(s3),2)*pow(1+V(s26),1)*pow(1-V(s30),2)+2*V(a64)*(1)*pow(1-V(s3),2)*pow(1-V(s26),1)*pow(1+V(s30),2)+2*V(a73)*(-1)*pow(1+V(s26),1)*pow(1+V(s24),2)*pow(1+V(s32),2)+2*V(a74)*(-1)*pow(1+V(s26),1)*pow(1-V(s24),2)*pow(1-V(s32),2)+2*V(a75)*(1)*pow(1-V(s26),1)*pow(1+V(s24),2)*pow(1-V(s32),2)+2*V(a76)*(1)*pow(1-V(s26),1)*pow(1-V(s24),2)*pow(1+V(s32),2)+2*V(a161)*(-1)*pow(1+V(s9),2)*pow(1+V(s26),1)*pow(1+V(s40),2)+2*V(a162)*(1)*pow(1+V(s9),2)*pow(1-V(s26),1)*pow(1-V(s40),2)+2*V(a163)*(-1)*pow(1-V(s9),2)*pow(1+V(s26),1)*pow(1-V(s40),2)+2*V(a164)*(1)*pow(1-V(s9),2)*pow(1-V(s26),1)*pow(1+V(s40),2)}
+.func fs27() = {2*V(a17)*(-1)*pow(1+V(s27),1)*pow(1+V(s38),2)*pow(1+V(s42),2)+2*V(a18)*(-1)*pow(1+V(s27),1)*pow(1-V(s38),2)*pow(1-V(s42),2)+2*V(a19)*(1)*pow(1-V(s27),1)*pow(1+V(s38),2)*pow(1-V(s42),2)+2*V(a20)*(1)*pow(1-V(s27),1)*pow(1-V(s38),2)*pow(1+V(s42),2)+2*V(a65)*(-1)*pow(1+V(s12),2)*pow(1+V(s27),1)*pow(1+V(s39),2)+2*V(a66)*(1)*pow(1+V(s12),2)*pow(1-V(s27),1)*pow(1-V(s39),2)+2*V(a67)*(-1)*pow(1-V(s12),2)*pow(1+V(s27),1)*pow(1-V(s39),2)+2*V(a68)*(1)*pow(1-V(s12),2)*pow(1-V(s27),1)*pow(1+V(s39),2)+2*V(a113)*(-1)*pow(1+V(s27),1)*pow(1+V(s30),2)*pow(1+V(s40),2)+2*V(a114)*(-1)*pow(1+V(s27),1)*pow(1-V(s30),2)*pow(1-V(s40),2)+2*V(a115)*(1)*pow(1-V(s27),1)*pow(1+V(s30),2)*pow(1-V(s40),2)+2*V(a116)*(1)*pow(1-V(s27),1)*pow(1-V(s30),2)*pow(1+V(s40),2)}
+.func fs28() = {2*V(a5)*(-1)*pow(1+V(s2),2)*pow(1+V(s28),1)*pow(1+V(s35),2)+2*V(a6)*(1)*pow(1+V(s2),2)*pow(1-V(s28),1)*pow(1-V(s35),2)+2*V(a7)*(-1)*pow(1-V(s2),2)*pow(1+V(s28),1)*pow(1-V(s35),2)+2*V(a8)*(1)*pow(1-V(s2),2)*pow(1-V(s28),1)*pow(1+V(s35),2)+2*V(a77)*(-1)*pow(1+V(s1),2)*pow(1+V(s28),1)*pow(1+V(s29),2)+2*V(a78)*(1)*pow(1+V(s1),2)*pow(1-V(s28),1)*pow(1-V(s29),2)+2*V(a79)*(-1)*pow(1-V(s1),2)*pow(1+V(s28),1)*pow(1-V(s29),2)+2*V(a80)*(1)*pow(1-V(s1),2)*pow(1-V(s28),1)*pow(1+V(s29),2)+2*V(a97)*(1)*pow(1-V(s28),1)*pow(1-V(s37),2)*pow(1-V(s44),2)+2*V(a98)*(-1)*pow(1+V(s28),1)*pow(1+V(s37),2)*pow(1-V(s44),2)+2*V(a99)*(-1)*pow(1+V(s28),1)*pow(1-V(s37),2)*pow(1+V(s44),2)+2*V(a100)*(1)*pow(1-V(s28),1)*pow(1+V(s37),2)*pow(1+V(s44),2)}
+.func fs29() = {2*V(a77)*(-1)*pow(1+V(s1),2)*pow(1+V(s28),2)*pow(1+V(s29),1)+2*V(a78)*(1)*pow(1+V(s1),2)*pow(1-V(s28),2)*pow(1-V(s29),1)+2*V(a79)*(1)*pow(1-V(s1),2)*pow(1+V(s28),2)*pow(1-V(s29),1)+2*V(a80)*(-1)*pow(1-V(s1),2)*pow(1-V(s28),2)*pow(1+V(s29),1)+2*V(a121)*(1)*pow(1-V(s29),1)*pow(1-V(s45),2)*pow(1-V(s48),2)+2*V(a122)*(-1)*pow(1+V(s29),1)*pow(1+V(s45),2)*pow(1-V(s48),2)+2*V(a123)*(-1)*pow(1+V(s29),1)*pow(1-V(s45),2)*pow(1+V(s48),2)+2*V(a124)*(1)*pow(1-V(s29),1)*pow(1+V(s45),2)*pow(1+V(s48),2)+2*V(a141)*(-1)*pow(1+V(s29),1)*pow(1+V(s40),2)*pow(1+V(s41),2)+2*V(a142)*(-1)*pow(1+V(s29),1)*pow(1-V(s40),2)*pow(1-V(s41),2)+2*V(a143)*(1)*pow(1-V(s29),1)*pow(1+V(s40),2)*pow(1-V(s41),2)+2*V(a144)*(1)*pow(1-V(s29),1)*pow(1-V(s40),2)*pow(1+V(s41),2)}
+.func fs30() = {2*V(a61)*(-1)*pow(1+V(s3),2)*pow(1+V(s26),2)*pow(1+V(s30),1)+2*V(a62)*(1)*pow(1+V(s3),2)*pow(1-V(s26),2)*pow(1-V(s30),1)+2*V(a63)*(1)*pow(1-V(s3),2)*pow(1+V(s26),2)*pow(1-V(s30),1)+2*V(a64)*(-1)*pow(1-V(s3),2)*pow(1-V(s26),2)*pow(1+V(s30),1)+2*V(a69)*(1)*pow(1-V(s6),2)*pow(1-V(s22),2)*pow(1-V(s30),1)+2*V(a70)*(1)*pow(1+V(s6),2)*pow(1+V(s22),2)*pow(1-V(s30),1)+2*V(a71)*(-1)*pow(1+V(s6),2)*pow(1-V(s22),2)*pow(1+V(s30),1)+2*V(a72)*(-1)*pow(1-V(s6),2)*pow(1+V(s22),2)*pow(1+V(s30),1)+2*V(a113)*(-1)*pow(1+V(s27),2)*pow(1+V(s30),1)*pow(1+V(s40),2)+2*V(a114)*(1)*pow(1+V(s27),2)*pow(1-V(s30),1)*pow(1-V(s40),2)+2*V(a115)*(-1)*pow(1-V(s27),2)*pow(1+V(s30),1)*pow(1-V(s40),2)+2*V(a116)*(1)*pow(1-V(s27),2)*pow(1-V(s30),1)*pow(1+V(s40),2)}
+.func fs31() = {2*V(a9)*(-1)*pow(1+V(s17),2)*pow(1+V(s31),1)*pow(1+V(s45),2)+2*V(a10)*(1)*pow(1+V(s17),2)*pow(1-V(s31),1)*pow(1-V(s45),2)+2*V(a11)*(-1)*pow(1-V(s17),2)*pow(1+V(s31),1)*pow(1-V(s45),2)+2*V(a12)*(1)*pow(1-V(s17),2)*pow(1-V(s31),1)*pow(1+V(s45),2)+2*V(a85)*(1)*pow(1-V(s10),2)*pow(1-V(s31),1)*pow(1-V(s34),2)+2*V(a86)*(-1)*pow(1+V(s10),2)*pow(1+V(s31),1)*pow(1-V(s34),2)+2*V(a87)*(1)*pow(1+V(s10),2)*pow(1-V(s31),1)*pow(1+V(s34),2)+2*V(a88)*(-1)*pow(1-V(s10),2)*pow(1+V(s31),1)*pow(1+V(s34),2)+2*V(a153)*(-1)*pow(1+V(s12),2)*pow(1+V(s20),2)*pow(1+V(s31),1)+2*V(a154)*(1)*pow(1+V(s12),2)*pow(1-V(s20),2)*pow(1-V(s31),1)+2*V(a155)*(1)*pow(1-V(s12),2)*pow(1+V(s20),2)*pow(1-V(s31),1)+2*V(a156)*(-1)*pow(1-V(s12),2)*pow(1-V(s20),2)*pow(1+V(s31),1)}
+.func fs32() = {2*V(a25)*(-1)*pow(1+V(s23),2)*pow(1+V(s32),1)*pow(1+V(s47),2)+2*V(a26)*(1)*pow(1+V(s23),2)*pow(1-V(s32),1)*pow(1-V(s47),2)+2*V(a27)*(-1)*pow(1-V(s23),2)*pow(1+V(s32),1)*pow(1-V(s47),2)+2*V(a28)*(1)*pow(1-V(s23),2)*pow(1-V(s32),1)*pow(1+V(s47),2)+2*V(a73)*(-1)*pow(1+V(s26),2)*pow(1+V(s24),2)*pow(1+V(s32),1)+2*V(a74)*(1)*pow(1+V(s26),2)*pow(1-V(s24),2)*pow(1-V(s32),1)+2*V(a75)*(1)*pow(1-V(s26),2)*pow(1+V(s24),2)*pow(1-V(s32),1)+2*V(a76)*(-1)*pow(1-V(s26),2)*pow(1-V(s24),2)*pow(1+V(s32),1)+2*V(a165)*(-1)*pow(1+V(s1),2)*pow(1+V(s7),2)*pow(1+V(s32),1)+2*V(a166)*(1)*pow(1+V(s1),2)*pow(1-V(s7),2)*pow(1-V(s32),1)+2*V(a167)*(1)*pow(1-V(s1),2)*pow(1+V(s7),2)*pow(1-V(s32),1)+2*V(a168)*(-1)*pow(1-V(s1),2)*pow(1-V(s7),2)*pow(1+V(s32),1)}
+.func fs33() = {2*V(a93)*(1)*pow(1-V(s16),2)*pow(1-V(s25),2)*pow(1-V(s33),1)+2*V(a94)*(1)*pow(1+V(s16),2)*pow(1+V(s25),2)*pow(1-V(s33),1)+2*V(a95)*(-1)*pow(1+V(s16),2)*pow(1-V(s25),2)*pow(1+V(s33),1)+2*V(a96)*(-1)*pow(1-V(s16),2)*pow(1+V(s25),2)*pow(1+V(s33),1)+2*V(a117)*(1)*pow(1-V(s11),2)*pow(1-V(s33),1)*pow(1-V(s34),2)+2*V(a118)*(-1)*pow(1+V(s11),2)*pow(1+V(s33),1)*pow(1-V(s34),2)+2*V(a119)*(1)*pow(1+V(s11),2)*pow(1-V(s33),1)*pow(1+V(s34),2)+2*V(a120)*(-1)*pow(1-V(s11),2)*pow(1+V(s33),1)*pow(1+V(s34),2)+2*V(a189)*(-1)*pow(1+V(s23),2)*pow(1+V(s33),1)*pow(1+V(s47),2)+2*V(a190)*(1)*pow(1+V(s23),2)*pow(1-V(s33),1)*pow(1-V(s47),2)+2*V(a191)*(-1)*pow(1-V(s23),2)*pow(1+V(s33),1)*pow(1-V(s47),2)+2*V(a192)*(1)*pow(1-V(s23),2)*pow(1-V(s33),1)*pow(1+V(s47),2)}
+.func fs34() = {2*V(a85)*(1)*pow(1-V(s10),2)*pow(1-V(s31),2)*pow(1-V(s34),1)+2*V(a86)*(1)*pow(1+V(s10),2)*pow(1+V(s31),2)*pow(1-V(s34),1)+2*V(a87)*(-1)*pow(1+V(s10),2)*pow(1-V(s31),2)*pow(1+V(s34),1)+2*V(a88)*(-1)*pow(1-V(s10),2)*pow(1+V(s31),2)*pow(1+V(s34),1)+2*V(a117)*(1)*pow(1-V(s11),2)*pow(1-V(s33),2)*pow(1-V(s34),1)+2*V(a118)*(1)*pow(1+V(s11),2)*pow(1+V(s33),2)*pow(1-V(s34),1)+2*V(a119)*(-1)*pow(1+V(s11),2)*pow(1-V(s33),2)*pow(1+V(s34),1)+2*V(a120)*(-1)*pow(1-V(s11),2)*pow(1+V(s33),2)*pow(1+V(s34),1)+2*V(a137)*(1)*pow(1-V(s13),2)*pow(1-V(s14),2)*pow(1-V(s34),1)+2*V(a138)*(1)*pow(1+V(s13),2)*pow(1+V(s14),2)*pow(1-V(s34),1)+2*V(a139)*(-1)*pow(1+V(s13),2)*pow(1-V(s14),2)*pow(1+V(s34),1)+2*V(a140)*(-1)*pow(1-V(s13),2)*pow(1+V(s14),2)*pow(1+V(s34),1)}
+.func fs35() = {2*V(a5)*(-1)*pow(1+V(s2),2)*pow(1+V(s28),2)*pow(1+V(s35),1)+2*V(a6)*(1)*pow(1+V(s2),2)*pow(1-V(s28),2)*pow(1-V(s35),1)+2*V(a7)*(1)*pow(1-V(s2),2)*pow(1+V(s28),2)*pow(1-V(s35),1)+2*V(a8)*(-1)*pow(1-V(s2),2)*pow(1-V(s28),2)*pow(1+V(s35),1)+2*V(a49)*(-1)*pow(1+V(s3),2)*pow(1+V(s21),2)*pow(1+V(s35),1)+2*V(a50)*(1)*pow(1+V(s3),2)*pow(1-V(s21),2)*pow(1-V(s35),1)+2*V(a51)*(1)*pow(1-V(s3),2)*pow(1+V(s21),2)*pow(1-V(s35),1)+2*V(a52)*(-1)*pow(1-V(s3),2)*pow(1-V(s21),2)*pow(1+V(s35),1)+2*V(a185)*(-1)*pow(1+V(s6),2)*pow(1+V(s35),1)*pow(1+V(s49),2)+2*V(a186)*(1)*pow(1+V(s6),2)*pow(1-V(s35),1)*pow(1-V(s49),2)+2*V(a187)*(-1)*pow(1-V(s6),2)*pow(1+V(s35),1)*pow(1-V(s49),2)+2*V(a188)*(1)*pow(1-V(s6),2)*pow(1-V(s35),1)*pow(1+V(s49),2)}
+.func fs36() = {2*V(a105)*(-1)*pow(1+V(s25),2)*pow(1+V(s36),1)*pow(1+V(s38),2)+2*V(a106)*(1)*pow(1+V(s25),2)*pow(1-V(s36),1)*pow(1-V(s38),2)+2*V(a107)*(-1)*pow(1-V(s25),2)*pow(1+V(s36),1)*pow(1-V(s38),2)+2*V(a108)*(1)*pow(1-V(s25),2)*pow(1-V(s36),1)*pow(1+V(s38),2)+2*V(a129)*(-1)*pow(1+V(s17),2)*pow(1+V(s36),1)*pow(1+V(s39),2)+2*V(a130)*(1)*pow(1+V(s17),2)*pow(1-V(s36),1)*pow(1-V(s39),2)+2*V(a131)*(-1)*pow(1-V(s17),2)*pow(1+V(s36),1)*pow(1-V(s39),2)+2*V(a132)*(1)*pow(1-V(s17),2)*pow(1-V(s36),1)*pow(1+V(s39),2)+2*V(a133)*(1)*pow(1-V(s22),2)*pow(1-V(s36),1)*pow(1-V(s19),2)+2*V(a134)*(-1)*pow(1+V(s22),2)*pow(1+V(s36),1)*pow(1-V(s19),2)+2*V(a135)*(1)*pow(1+V(s22),2)*pow(1-V(s36),1)*pow(1+V(s19),2)+2*V(a136)*(-1)*pow(1-V(s22),2)*pow(1+V(s36),1)*pow(1+V(s19),2)}
+.func fs37() = {2*V(a37)*(1)*pow(1-V(s2),2)*pow(1-V(s37),1)*pow(1-V(s38),2)+2*V(a38)*(-1)*pow(1+V(s2),2)*pow(1+V(s37),1)*pow(1-V(s38),2)+2*V(a39)*(1)*pow(1+V(s2),2)*pow(1-V(s37),1)*pow(1+V(s38),2)+2*V(a40)*(-1)*pow(1-V(s2),2)*pow(1+V(s37),1)*pow(1+V(s38),2)+2*V(a97)*(1)*pow(1-V(s28),2)*pow(1-V(s37),1)*pow(1-V(s44),2)+2*V(a98)*(-1)*pow(1+V(s28),2)*pow(1+V(s37),1)*pow(1-V(s44),2)+2*V(a99)*(1)*pow(1+V(s28),2)*pow(1-V(s37),1)*pow(1+V(s44),2)+2*V(a100)*(-1)*pow(1-V(s28),2)*pow(1+V(s37),1)*pow(1+V(s44),2)+2*V(a173)*(-1)*pow(1+V(s37),1)*pow(1+V(s16),2)*pow(1+V(s39),2)+2*V(a174)*(-1)*pow(1+V(s37),1)*pow(1-V(s16),2)*pow(1-V(s39),2)+2*V(a175)*(1)*pow(1-V(s37),1)*pow(1+V(s16),2)*pow(1-V(s39),2)+2*V(a176)*(1)*pow(1-V(s37),1)*pow(1-V(s16),2)*pow(1+V(s39),2)}
+.func fs38() = {2*V(a17)*(-1)*pow(1+V(s27),2)*pow(1+V(s38),1)*pow(1+V(s42),2)+2*V(a18)*(1)*pow(1+V(s27),2)*pow(1-V(s38),1)*pow(1-V(s42),2)+2*V(a19)*(-1)*pow(1-V(s27),2)*pow(1+V(s38),1)*pow(1-V(s42),2)+2*V(a20)*(1)*pow(1-V(s27),2)*pow(1-V(s38),1)*pow(1+V(s42),2)+2*V(a37)*(1)*pow(1-V(s2),2)*pow(1-V(s37),2)*pow(1-V(s38),1)+2*V(a38)*(1)*pow(1+V(s2),2)*pow(1+V(s37),2)*pow(1-V(s38),1)+2*V(a39)*(-1)*pow(1+V(s2),2)*pow(1-V(s37),2)*pow(1+V(s38),1)+2*V(a40)*(-1)*pow(1-V(s2),2)*pow(1+V(s37),2)*pow(1+V(s38),1)+2*V(a105)*(-1)*pow(1+V(s25),2)*pow(1+V(s36),2)*pow(1+V(s38),1)+2*V(a106)*(1)*pow(1+V(s25),2)*pow(1-V(s36),2)*pow(1-V(s38),1)+2*V(a107)*(1)*pow(1-V(s25),2)*pow(1+V(s36),2)*pow(1-V(s38),1)+2*V(a108)*(-1)*pow(1-V(s25),2)*pow(1-V(s36),2)*pow(1+V(s38),1)}
+.func fs39() = {2*V(a65)*(-1)*pow(1+V(s12),2)*pow(1+V(s27),2)*pow(1+V(s39),1)+2*V(a66)*(1)*pow(1+V(s12),2)*pow(1-V(s27),2)*pow(1-V(s39),1)+2*V(a67)*(1)*pow(1-V(s12),2)*pow(1+V(s27),2)*pow(1-V(s39),1)+2*V(a68)*(-1)*pow(1-V(s12),2)*pow(1-V(s27),2)*pow(1+V(s39),1)+2*V(a129)*(-1)*pow(1+V(s17),2)*pow(1+V(s36),2)*pow(1+V(s39),1)+2*V(a130)*(1)*pow(1+V(s17),2)*pow(1-V(s36),2)*pow(1-V(s39),1)+2*V(a131)*(1)*pow(1-V(s17),2)*pow(1+V(s36),2)*pow(1-V(s39),1)+2*V(a132)*(-1)*pow(1-V(s17),2)*pow(1-V(s36),2)*pow(1+V(s39),1)+2*V(a173)*(-1)*pow(1+V(s37),2)*pow(1+V(s16),2)*pow(1+V(s39),1)+2*V(a174)*(1)*pow(1+V(s37),2)*pow(1-V(s16),2)*pow(1-V(s39),1)+2*V(a175)*(1)*pow(1-V(s37),2)*pow(1+V(s16),2)*pow(1-V(s39),1)+2*V(a176)*(-1)*pow(1-V(s37),2)*pow(1-V(s16),2)*pow(1+V(s39),1)}
+.func fs40() = {2*V(a113)*(-1)*pow(1+V(s27),2)*pow(1+V(s30),2)*pow(1+V(s40),1)+2*V(a114)*(1)*pow(1+V(s27),2)*pow(1-V(s30),2)*pow(1-V(s40),1)+2*V(a115)*(1)*pow(1-V(s27),2)*pow(1+V(s30),2)*pow(1-V(s40),1)+2*V(a116)*(-1)*pow(1-V(s27),2)*pow(1-V(s30),2)*pow(1+V(s40),1)+2*V(a141)*(-1)*pow(1+V(s29),2)*pow(1+V(s40),1)*pow(1+V(s41),2)+2*V(a142)*(1)*pow(1+V(s29),2)*pow(1-V(s40),1)*pow(1-V(s41),2)+2*V(a143)*(-1)*pow(1-V(s29),2)*pow(1+V(s40),1)*pow(1-V(s41),2)+2*V(a144)*(1)*pow(1-V(s29),2)*pow(1-V(s40),1)*pow(1+V(s41),2)+2*V(a161)*(-1)*pow(1+V(s9),2)*pow(1+V(s26),2)*pow(1+V(s40),1)+2*V(a162)*(1)*pow(1+V(s9),2)*pow(1-V(s26),2)*pow(1-V(s40),1)+2*V(a163)*(1)*pow(1-V(s9),2)*pow(1+V(s26),2)*pow(1-V(s40),1)+2*V(a164)*(-1)*pow(1-V(s9),2)*pow(1-V(s26),2)*pow(1+V(s40),1)}
+.func fs41() = {2*V(a33)*(1)*pow(1-V(s20),2)*pow(1-V(s24),2)*pow(1-V(s41),1)+2*V(a34)*(1)*pow(1+V(s20),2)*pow(1+V(s24),2)*pow(1-V(s41),1)+2*V(a35)*(-1)*pow(1+V(s20),2)*pow(1-V(s24),2)*pow(1+V(s41),1)+2*V(a36)*(-1)*pow(1-V(s20),2)*pow(1+V(s24),2)*pow(1+V(s41),1)+2*V(a141)*(-1)*pow(1+V(s29),2)*pow(1+V(s40),2)*pow(1+V(s41),1)+2*V(a142)*(1)*pow(1+V(s29),2)*pow(1-V(s40),2)*pow(1-V(s41),1)+2*V(a143)*(1)*pow(1-V(s29),2)*pow(1+V(s40),2)*pow(1-V(s41),1)+2*V(a144)*(-1)*pow(1-V(s29),2)*pow(1-V(s40),2)*pow(1+V(s41),1)+2*V(a157)*(-1)*pow(1+V(s7),2)*pow(1+V(s41),1)*pow(1+V(s46),2)+2*V(a158)*(1)*pow(1+V(s7),2)*pow(1-V(s41),1)*pow(1-V(s46),2)+2*V(a159)*(-1)*pow(1-V(s7),2)*pow(1+V(s41),1)*pow(1-V(s46),2)+2*V(a160)*(1)*pow(1-V(s7),2)*pow(1-V(s41),1)*pow(1+V(s46),2)}
+.func fs42() = {2*V(a17)*(-1)*pow(1+V(s27),2)*pow(1+V(s38),2)*pow(1+V(s42),1)+2*V(a18)*(1)*pow(1+V(s27),2)*pow(1-V(s38),2)*pow(1-V(s42),1)+2*V(a19)*(1)*pow(1-V(s27),2)*pow(1+V(s38),2)*pow(1-V(s42),1)+2*V(a20)*(-1)*pow(1-V(s27),2)*pow(1-V(s38),2)*pow(1+V(s42),1)+2*V(a81)*(1)*pow(1-V(s8),2)*pow(1-V(s10),2)*pow(1-V(s42),1)+2*V(a82)*(1)*pow(1+V(s8),2)*pow(1+V(s10),2)*pow(1-V(s42),1)+2*V(a83)*(-1)*pow(1+V(s8),2)*pow(1-V(s10),2)*pow(1+V(s42),1)+2*V(a84)*(-1)*pow(1-V(s8),2)*pow(1+V(s10),2)*pow(1+V(s42),1)+2*V(a181)*(-1)*pow(1+V(s15),2)*pow(1+V(s42),1)*pow(1+V(s44),2)+2*V(a182)*(1)*pow(1+V(s15),2)*pow(1-V(s42),1)*pow(1-V(s44),2)+2*V(a183)*(-1)*pow(1-V(s15),2)*pow(1+V(s42),1)*pow(1-V(s44),2)+2*V(a184)*(1)*pow(1-V(s15),2)*pow(1-V(s42),1)*pow(1+V(s44),2)}
+.func fs43() = {2*V(a29)*(1)*pow(1-V(s4),2)*pow(1-V(s43),1)*pow(1-V(s46),2)+2*V(a30)*(-1)*pow(1+V(s4),2)*pow(1+V(s43),1)*pow(1-V(s46),2)+2*V(a31)*(1)*pow(1+V(s4),2)*pow(1-V(s43),1)*pow(1+V(s46),2)+2*V(a32)*(-1)*pow(1-V(s4),2)*pow(1+V(s43),1)*pow(1+V(s46),2)+2*V(a41)*(1)*pow(1-V(s43),1)*pow(1-V(s46),2)*pow(1-V(s47),2)+2*V(a42)*(-1)*pow(1+V(s43),1)*pow(1+V(s46),2)*pow(1-V(s47),2)+2*V(a43)*(-1)*pow(1+V(s43),1)*pow(1-V(s46),2)*pow(1+V(s47),2)+2*V(a44)*(1)*pow(1-V(s43),1)*pow(1+V(s46),2)*pow(1+V(s47),2)+2*V(a57)*(-1)*pow(1+V(s4),2)*pow(1+V(s43),1)*pow(1+V(s48),2)+2*V(a58)*(1)*pow(1+V(s4),2)*pow(1-V(s43),1)*pow(1-V(s48),2)+2*V(a59)*(-1)*pow(1-V(s4),2)*pow(1+V(s43),1)*pow(1-V(s48),2)+2*V(a60)*(1)*pow(1-V(s4),2)*pow(1-V(s43),1)*pow(1+V(s48),2)}
+.func fs44() = {2*V(a97)*(1)*pow(1-V(s28),2)*pow(1-V(s37),2)*pow(1-V(s44),1)+2*V(a98)*(1)*pow(1+V(s28),2)*pow(1+V(s37),2)*pow(1-V(s44),1)+2*V(a99)*(-1)*pow(1+V(s28),2)*pow(1-V(s37),2)*pow(1+V(s44),1)+2*V(a100)*(-1)*pow(1-V(s28),2)*pow(1+V(s37),2)*pow(1+V(s44),1)+2*V(a145)*(1)*pow(1-V(s1),2)*pow(1-V(s16),2)*pow(1-V(s44),1)+2*V(a146)*(1)*pow(1+V(s1),2)*pow(1+V(s16),2)*pow(1-V(s44),1)+2*V(a147)*(-1)*pow(1+V(s1),2)*pow(1-V(s16),2)*pow(1+V(s44),1)+2*V(a148)*(-1)*pow(1-V(s1),2)*pow(1+V(s16),2)*pow(1+V(s44),1)+2*V(a181)*(-1)*pow(1+V(s15),2)*pow(1+V(s42),2)*pow(1+V(s44),1)+2*V(a182)*(1)*pow(1+V(s15),2)*pow(1-V(s42),2)*pow(1-V(s44),1)+2*V(a183)*(1)*pow(1-V(s15),2)*pow(1+V(s42),2)*pow(1-V(s44),1)+2*V(a184)*(-1)*pow(1-V(s15),2)*pow(1-V(s42),2)*pow(1+V(s44),1)}
+.func fs45() = {2*V(a9)*(-1)*pow(1+V(s17),2)*pow(1+V(s31),2)*pow(1+V(s45),1)+2*V(a10)*(1)*pow(1+V(s17),2)*pow(1-V(s31),2)*pow(1-V(s45),1)+2*V(a11)*(1)*pow(1-V(s17),2)*pow(1+V(s31),2)*pow(1-V(s45),1)+2*V(a12)*(-1)*pow(1-V(s17),2)*pow(1-V(s31),2)*pow(1+V(s45),1)+2*V(a45)*(-1)*pow(1+V(s24),2)*pow(1+V(s45),1)*pow(1+V(s50),2)+2*V(a46)*(1)*pow(1+V(s24),2)*pow(1-V(s45),1)*pow(1-V(s50),2)+2*V(a47)*(-1)*pow(1-V(s24),2)*pow(1+V(s45),1)*pow(1-V(s50),2)+2*V(a48)*(1)*pow(1-V(s24),2)*pow(1-V(s45),1)*pow(1+V(s50),2)+2*V(a121)*(1)*pow(1-V(s29),2)*pow(1-V(s45),1)*pow(1-V(s48),2)+2*V(a122)*(-1)*pow(1+V(s29),2)*pow(1+V(s45),1)*pow(1-V(s48),2)+2*V(a123)*(1)*pow(1+V(s29),2)*pow(1-V(s45),1)*pow(1+V(s48),2)+2*V(a124)*(-1)*pow(1-V(s29),2)*pow(1+V(s45),1)*pow(1+V(s48),2)}
+.func fs46() = {2*V(a29)*(1)*pow(1-V(s4),2)*pow(1-V(s43),2)*pow(1-V(s46),1)+2*V(a30)*(1)*pow(1+V(s4),2)*pow(1+V(s43),2)*pow(1-V(s46),1)+2*V(a31)*(-1)*pow(1+V(s4),2)*pow(1-V(s43),2)*pow(1+V(s46),1)+2*V(a32)*(-1)*pow(1-V(s4),2)*pow(1+V(s43),2)*pow(1+V(s46),1)+2*V(a41)*(1)*pow(1-V(s43),2)*pow(1-V(s46),1)*pow(1-V(s47),2)+2*V(a42)*(-1)*pow(1+V(s43),2)*pow(1+V(s46),1)*pow(1-V(s47),2)+2*V(a43)*(1)*pow(1+V(s43),2)*pow(1-V(s46),1)*pow(1+V(s47),2)+2*V(a44)*(-1)*pow(1-V(s43),2)*pow(1+V(s46),1)*pow(1+V(s47),2)+2*V(a157)*(-1)*pow(1+V(s7),2)*pow(1+V(s41),2)*pow(1+V(s46),1)+2*V(a158)*(1)*pow(1+V(s7),2)*pow(1-V(s41),2)*pow(1-V(s46),1)+2*V(a159)*(1)*pow(1-V(s7),2)*pow(1+V(s41),2)*pow(1-V(s46),1)+2*V(a160)*(-1)*pow(1-V(s7),2)*pow(1-V(s41),2)*pow(1+V(s46),1)}
+.func fs47() = {2*V(a25)*(-1)*pow(1+V(s23),2)*pow(1+V(s32),2)*pow(1+V(s47),1)+2*V(a26)*(1)*pow(1+V(s23),2)*pow(1-V(s32),2)*pow(1-V(s47),1)+2*V(a27)*(1)*pow(1-V(s23),2)*pow(1+V(s32),2)*pow(1-V(s47),1)+2*V(a28)*(-1)*pow(1-V(s23),2)*pow(1-V(s32),2)*pow(1+V(s47),1)+2*V(a41)*(1)*pow(1-V(s43),2)*pow(1-V(s46),2)*pow(1-V(s47),1)+2*V(a42)*(1)*pow(1+V(s43),2)*pow(1+V(s46),2)*pow(1-V(s47),1)+2*V(a43)*(-1)*pow(1+V(s43),2)*pow(1-V(s46),2)*pow(1+V(s47),1)+2*V(a44)*(-1)*pow(1-V(s43),2)*pow(1+V(s46),2)*pow(1+V(s47),1)+2*V(a189)*(-1)*pow(1+V(s23),2)*pow(1+V(s33),2)*pow(1+V(s47),1)+2*V(a190)*(1)*pow(1+V(s23),2)*pow(1-V(s33),2)*pow(1-V(s47),1)+2*V(a191)*(1)*pow(1-V(s23),2)*pow(1+V(s33),2)*pow(1-V(s47),1)+2*V(a192)*(-1)*pow(1-V(s23),2)*pow(1-V(s33),2)*pow(1+V(s47),1)}
+.func fs48() = {2*V(a57)*(-1)*pow(1+V(s4),2)*pow(1+V(s43),2)*pow(1+V(s48),1)+2*V(a58)*(1)*pow(1+V(s4),2)*pow(1-V(s43),2)*pow(1-V(s48),1)+2*V(a59)*(1)*pow(1-V(s4),2)*pow(1+V(s43),2)*pow(1-V(s48),1)+2*V(a60)*(-1)*pow(1-V(s4),2)*pow(1-V(s43),2)*pow(1+V(s48),1)+2*V(a121)*(1)*pow(1-V(s29),2)*pow(1-V(s45),2)*pow(1-V(s48),1)+2*V(a122)*(1)*pow(1+V(s29),2)*pow(1+V(s45),2)*pow(1-V(s48),1)+2*V(a123)*(-1)*pow(1+V(s29),2)*pow(1-V(s45),2)*pow(1+V(s48),1)+2*V(a124)*(-1)*pow(1-V(s29),2)*pow(1+V(s45),2)*pow(1+V(s48),1)+2*V(a149)*(1)*pow(1-V(s48),1)*pow(1-V(s49),2)*pow(1-V(s50),2)+2*V(a150)*(-1)*pow(1+V(s48),1)*pow(1+V(s49),2)*pow(1-V(s50),2)+2*V(a151)*(-1)*pow(1+V(s48),1)*pow(1-V(s49),2)*pow(1+V(s50),2)+2*V(a152)*(1)*pow(1-V(s48),1)*pow(1+V(s49),2)*pow(1+V(s50),2)}
+.func fs49() = {2*V(a101)*(-1)*pow(1+V(s3),2)*pow(1+V(s49),1)*pow(1+V(s50),2)+2*V(a102)*(1)*pow(1+V(s3),2)*pow(1-V(s49),1)*pow(1-V(s50),2)+2*V(a103)*(-1)*pow(1-V(s3),2)*pow(1+V(s49),1)*pow(1-V(s50),2)+2*V(a104)*(1)*pow(1-V(s3),2)*pow(1-V(s49),1)*pow(1+V(s50),2)+2*V(a149)*(1)*pow(1-V(s48),2)*pow(1-V(s49),1)*pow(1-V(s50),2)+2*V(a150)*(-1)*pow(1+V(s48),2)*pow(1+V(s49),1)*pow(1-V(s50),2)+2*V(a151)*(1)*pow(1+V(s48),2)*pow(1-V(s49),1)*pow(1+V(s50),2)+2*V(a152)*(-1)*pow(1-V(s48),2)*pow(1+V(s49),1)*pow(1+V(s50),2)+2*V(a185)*(-1)*pow(1+V(s6),2)*pow(1+V(s35),2)*pow(1+V(s49),1)+2*V(a186)*(1)*pow(1+V(s6),2)*pow(1-V(s35),2)*pow(1-V(s49),1)+2*V(a187)*(1)*pow(1-V(s6),2)*pow(1+V(s35),2)*pow(1-V(s49),1)+2*V(a188)*(-1)*pow(1-V(s6),2)*pow(1-V(s35),2)*pow(1+V(s49),1)}
+.func fs50() = {2*V(a45)*(-1)*pow(1+V(s24),2)*pow(1+V(s45),2)*pow(1+V(s50),1)+2*V(a46)*(1)*pow(1+V(s24),2)*pow(1-V(s45),2)*pow(1-V(s50),1)+2*V(a47)*(1)*pow(1-V(s24),2)*pow(1+V(s45),2)*pow(1-V(s50),1)+2*V(a48)*(-1)*pow(1-V(s24),2)*pow(1-V(s45),2)*pow(1+V(s50),1)+2*V(a101)*(-1)*pow(1+V(s3),2)*pow(1+V(s49),2)*pow(1+V(s50),1)+2*V(a102)*(1)*pow(1+V(s3),2)*pow(1-V(s49),2)*pow(1-V(s50),1)+2*V(a103)*(1)*pow(1-V(s3),2)*pow(1+V(s49),2)*pow(1-V(s50),1)+2*V(a104)*(-1)*pow(1-V(s3),2)*pow(1-V(s49),2)*pow(1+V(s50),1)+2*V(a149)*(1)*pow(1-V(s48),2)*pow(1-V(s49),2)*pow(1-V(s50),1)+2*V(a150)*(1)*pow(1+V(s48),2)*pow(1+V(s49),2)*pow(1-V(s50),1)+2*V(a151)*(-1)*pow(1+V(s48),2)*pow(1-V(s49),2)*pow(1+V(s50),1)+2*V(a152)*(-1)*pow(1-V(s48),2)*pow(1+V(s49),2)*pow(1+V(s50),1)}
+
+.func fa1() = {V(a1)*pow((1-V(s8))*(1-V(s18))*(1-V(s23)),2)}
+.func fa2() = {V(a2)*pow((1+V(s8))*(1+V(s18))*(1-V(s23)),2)}
+.func fa3() = {V(a3)*pow((1+V(s8))*(1-V(s18))*(1+V(s23)),2)}
+.func fa4() = {V(a4)*pow((1-V(s8))*(1+V(s18))*(1+V(s23)),2)}
+.func fa5() = {V(a5)*pow((1+V(s2))*(1+V(s28))*(1+V(s35)),2)}
+.func fa6() = {V(a6)*pow((1+V(s2))*(1-V(s28))*(1-V(s35)),2)}
+.func fa7() = {V(a7)*pow((1-V(s2))*(1+V(s28))*(1-V(s35)),2)}
+.func fa8() = {V(a8)*pow((1-V(s2))*(1-V(s28))*(1+V(s35)),2)}
+.func fa9() = {V(a9)*pow((1+V(s17))*(1+V(s31))*(1+V(s45)),2)}
+.func fa10() = {V(a10)*pow((1+V(s17))*(1-V(s31))*(1-V(s45)),2)}
+.func fa11() = {V(a11)*pow((1-V(s17))*(1+V(s31))*(1-V(s45)),2)}
+.func fa12() = {V(a12)*pow((1-V(s17))*(1-V(s31))*(1+V(s45)),2)}
+.func fa13() = {V(a13)*pow((1-V(s5))*(1-V(s18))*(1-V(s22)),2)}
+.func fa14() = {V(a14)*pow((1+V(s5))*(1+V(s18))*(1-V(s22)),2)}
+.func fa15() = {V(a15)*pow((1+V(s5))*(1-V(s18))*(1+V(s22)),2)}
+.func fa16() = {V(a16)*pow((1-V(s5))*(1+V(s18))*(1+V(s22)),2)}
+.func fa17() = {V(a17)*pow((1+V(s27))*(1+V(s38))*(1+V(s42)),2)}
+.func fa18() = {V(a18)*pow((1+V(s27))*(1-V(s38))*(1-V(s42)),2)}
+.func fa19() = {V(a19)*pow((1-V(s27))*(1+V(s38))*(1-V(s42)),2)}
+.func fa20() = {V(a20)*pow((1-V(s27))*(1-V(s38))*(1+V(s42)),2)}
+.func fa21() = {V(a21)*pow((1-V(s12))*(1-V(s15))*(1-V(s21)),2)}
+.func fa22() = {V(a22)*pow((1+V(s12))*(1+V(s15))*(1-V(s21)),2)}
+.func fa23() = {V(a23)*pow((1+V(s12))*(1-V(s15))*(1+V(s21)),2)}
+.func fa24() = {V(a24)*pow((1-V(s12))*(1+V(s15))*(1+V(s21)),2)}
+.func fa25() = {V(a25)*pow((1+V(s23))*(1+V(s32))*(1+V(s47)),2)}
+.func fa26() = {V(a26)*pow((1+V(s23))*(1-V(s32))*(1-V(s47)),2)}
+.func fa27() = {V(a27)*pow((1-V(s23))*(1+V(s32))*(1-V(s47)),2)}
+.func fa28() = {V(a28)*pow((1-V(s23))*(1-V(s32))*(1+V(s47)),2)}
+.func fa29() = {V(a29)*pow((1-V(s4))*(1-V(s43))*(1-V(s46)),2)}
+.func fa30() = {V(a30)*pow((1+V(s4))*(1+V(s43))*(1-V(s46)),2)}
+.func fa31() = {V(a31)*pow((1+V(s4))*(1-V(s43))*(1+V(s46)),2)}
+.func fa32() = {V(a32)*pow((1-V(s4))*(1+V(s43))*(1+V(s46)),2)}
+.func fa33() = {V(a33)*pow((1-V(s20))*(1-V(s24))*(1-V(s41)),2)}
+.func fa34() = {V(a34)*pow((1+V(s20))*(1+V(s24))*(1-V(s41)),2)}
+.func fa35() = {V(a35)*pow((1+V(s20))*(1-V(s24))*(1+V(s41)),2)}
+.func fa36() = {V(a36)*pow((1-V(s20))*(1+V(s24))*(1+V(s41)),2)}
+.func fa37() = {V(a37)*pow((1-V(s2))*(1-V(s37))*(1-V(s38)),2)}
+.func fa38() = {V(a38)*pow((1+V(s2))*(1+V(s37))*(1-V(s38)),2)}
+.func fa39() = {V(a39)*pow((1+V(s2))*(1-V(s37))*(1+V(s38)),2)}
+.func fa40() = {V(a40)*pow((1-V(s2))*(1+V(s37))*(1+V(s38)),2)}
+.func fa41() = {V(a41)*pow((1-V(s43))*(1-V(s46))*(1-V(s47)),2)}
+.func fa42() = {V(a42)*pow((1+V(s43))*(1+V(s46))*(1-V(s47)),2)}
+.func fa43() = {V(a43)*pow((1+V(s43))*(1-V(s46))*(1+V(s47)),2)}
+.func fa44() = {V(a44)*pow((1-V(s43))*(1+V(s46))*(1+V(s47)),2)}
+.func fa45() = {V(a45)*pow((1+V(s24))*(1+V(s45))*(1+V(s50)),2)}
+.func fa46() = {V(a46)*pow((1+V(s24))*(1-V(s45))*(1-V(s50)),2)}
+.func fa47() = {V(a47)*pow((1-V(s24))*(1+V(s45))*(1-V(s50)),2)}
+.func fa48() = {V(a48)*pow((1-V(s24))*(1-V(s45))*(1+V(s50)),2)}
+.func fa49() = {V(a49)*pow((1+V(s3))*(1+V(s21))*(1+V(s35)),2)}
+.func fa50() = {V(a50)*pow((1+V(s3))*(1-V(s21))*(1-V(s35)),2)}
+.func fa51() = {V(a51)*pow((1-V(s3))*(1+V(s21))*(1-V(s35)),2)}
+.func fa52() = {V(a52)*pow((1-V(s3))*(1-V(s21))*(1+V(s35)),2)}
+.func fa53() = {V(a53)*pow((1+V(s4))*(1+V(s5))*(1+V(s25)),2)}
+.func fa54() = {V(a54)*pow((1+V(s4))*(1-V(s5))*(1-V(s25)),2)}
+.func fa55() = {V(a55)*pow((1-V(s4))*(1+V(s5))*(1-V(s25)),2)}
+.func fa56() = {V(a56)*pow((1-V(s4))*(1-V(s5))*(1+V(s25)),2)}
+.func fa57() = {V(a57)*pow((1+V(s4))*(1+V(s43))*(1+V(s48)),2)}
+.func fa58() = {V(a58)*pow((1+V(s4))*(1-V(s43))*(1-V(s48)),2)}
+.func fa59() = {V(a59)*pow((1-V(s4))*(1+V(s43))*(1-V(s48)),2)}
+.func fa60() = {V(a60)*pow((1-V(s4))*(1-V(s43))*(1+V(s48)),2)}
+.func fa61() = {V(a61)*pow((1+V(s3))*(1+V(s26))*(1+V(s30)),2)}
+.func fa62() = {V(a62)*pow((1+V(s3))*(1-V(s26))*(1-V(s30)),2)}
+.func fa63() = {V(a63)*pow((1-V(s3))*(1+V(s26))*(1-V(s30)),2)}
+.func fa64() = {V(a64)*pow((1-V(s3))*(1-V(s26))*(1+V(s30)),2)}
+.func fa65() = {V(a65)*pow((1+V(s12))*(1+V(s27))*(1+V(s39)),2)}
+.func fa66() = {V(a66)*pow((1+V(s12))*(1-V(s27))*(1-V(s39)),2)}
+.func fa67() = {V(a67)*pow((1-V(s12))*(1+V(s27))*(1-V(s39)),2)}
+.func fa68() = {V(a68)*pow((1-V(s12))*(1-V(s27))*(1+V(s39)),2)}
+.func fa69() = {V(a69)*pow((1-V(s6))*(1-V(s22))*(1-V(s30)),2)}
+.func fa70() = {V(a70)*pow((1+V(s6))*(1+V(s22))*(1-V(s30)),2)}
+.func fa71() = {V(a71)*pow((1+V(s6))*(1-V(s22))*(1+V(s30)),2)}
+.func fa72() = {V(a72)*pow((1-V(s6))*(1+V(s22))*(1+V(s30)),2)}
+.func fa73() = {V(a73)*pow((1+V(s26))*(1+V(s24))*(1+V(s32)),2)}
+.func fa74() = {V(a74)*pow((1+V(s26))*(1-V(s24))*(1-V(s32)),2)}
+.func fa75() = {V(a75)*pow((1-V(s26))*(1+V(s24))*(1-V(s32)),2)}
+.func fa76() = {V(a76)*pow((1-V(s26))*(1-V(s24))*(1+V(s32)),2)}
+.func fa77() = {V(a77)*pow((1+V(s1))*(1+V(s28))*(1+V(s29)),2)}
+.func fa78() = {V(a78)*pow((1+V(s1))*(1-V(s28))*(1-V(s29)),2)}
+.func fa79() = {V(a79)*pow((1-V(s1))*(1+V(s28))*(1-V(s29)),2)}
+.func fa80() = {V(a80)*pow((1-V(s1))*(1-V(s28))*(1+V(s29)),2)}
+.func fa81() = {V(a81)*pow((1-V(s8))*(1-V(s10))*(1-V(s42)),2)}
+.func fa82() = {V(a82)*pow((1+V(s8))*(1+V(s10))*(1-V(s42)),2)}
+.func fa83() = {V(a83)*pow((1+V(s8))*(1-V(s10))*(1+V(s42)),2)}
+.func fa84() = {V(a84)*pow((1-V(s8))*(1+V(s10))*(1+V(s42)),2)}
+.func fa85() = {V(a85)*pow((1-V(s10))*(1-V(s31))*(1-V(s34)),2)}
+.func fa86() = {V(a86)*pow((1+V(s10))*(1+V(s31))*(1-V(s34)),2)}
+.func fa87() = {V(a87)*pow((1+V(s10))*(1-V(s31))*(1+V(s34)),2)}
+.func fa88() = {V(a88)*pow((1-V(s10))*(1+V(s31))*(1+V(s34)),2)}
+.func fa89() = {V(a89)*pow((1+V(s11))*(1+V(s17))*(1+V(s18)),2)}
+.func fa90() = {V(a90)*pow((1+V(s11))*(1-V(s17))*(1-V(s18)),2)}
+.func fa91() = {V(a91)*pow((1-V(s11))*(1+V(s17))*(1-V(s18)),2)}
+.func fa92() = {V(a92)*pow((1-V(s11))*(1-V(s17))*(1+V(s18)),2)}
+.func fa93() = {V(a93)*pow((1-V(s16))*(1-V(s25))*(1-V(s33)),2)}
+.func fa94() = {V(a94)*pow((1+V(s16))*(1+V(s25))*(1-V(s33)),2)}
+.func fa95() = {V(a95)*pow((1+V(s16))*(1-V(s25))*(1+V(s33)),2)}
+.func fa96() = {V(a96)*pow((1-V(s16))*(1+V(s25))*(1+V(s33)),2)}
+.func fa97() = {V(a97)*pow((1-V(s28))*(1-V(s37))*(1-V(s44)),2)}
+.func fa98() = {V(a98)*pow((1+V(s28))*(1+V(s37))*(1-V(s44)),2)}
+.func fa99() = {V(a99)*pow((1+V(s28))*(1-V(s37))*(1+V(s44)),2)}
+.func fa100() = {V(a100)*pow((1-V(s28))*(1+V(s37))*(1+V(s44)),2)}
+.func fa101() = {V(a101)*pow((1+V(s3))*(1+V(s49))*(1+V(s50)),2)}
+.func fa102() = {V(a102)*pow((1+V(s3))*(1-V(s49))*(1-V(s50)),2)}
+.func fa103() = {V(a103)*pow((1-V(s3))*(1+V(s49))*(1-V(s50)),2)}
+.func fa104() = {V(a104)*pow((1-V(s3))*(1-V(s49))*(1+V(s50)),2)}
+.func fa105() = {V(a105)*pow((1+V(s25))*(1+V(s36))*(1+V(s38)),2)}
+.func fa106() = {V(a106)*pow((1+V(s25))*(1-V(s36))*(1-V(s38)),2)}
+.func fa107() = {V(a107)*pow((1-V(s25))*(1+V(s36))*(1-V(s38)),2)}
+.func fa108() = {V(a108)*pow((1-V(s25))*(1-V(s36))*(1+V(s38)),2)}
+.func fa109() = {V(a109)*pow((1+V(s10))*(1+V(s11))*(1+V(s14)),2)}
+.func fa110() = {V(a110)*pow((1+V(s10))*(1-V(s11))*(1-V(s14)),2)}
+.func fa111() = {V(a111)*pow((1-V(s10))*(1+V(s11))*(1-V(s14)),2)}
+.func fa112() = {V(a112)*pow((1-V(s10))*(1-V(s11))*(1+V(s14)),2)}
+.func fa113() = {V(a113)*pow((1+V(s27))*(1+V(s30))*(1+V(s40)),2)}
+.func fa114() = {V(a114)*pow((1+V(s27))*(1-V(s30))*(1-V(s40)),2)}
+.func fa115() = {V(a115)*pow((1-V(s27))*(1+V(s30))*(1-V(s40)),2)}
+.func fa116() = {V(a116)*pow((1-V(s27))*(1-V(s30))*(1+V(s40)),2)}
+.func fa117() = {V(a117)*pow((1-V(s11))*(1-V(s33))*(1-V(s34)),2)}
+.func fa118() = {V(a118)*pow((1+V(s11))*(1+V(s33))*(1-V(s34)),2)}
+.func fa119() = {V(a119)*pow((1+V(s11))*(1-V(s33))*(1+V(s34)),2)}
+.func fa120() = {V(a120)*pow((1-V(s11))*(1+V(s33))*(1+V(s34)),2)}
+.func fa121() = {V(a121)*pow((1-V(s29))*(1-V(s45))*(1-V(s48)),2)}
+.func fa122() = {V(a122)*pow((1+V(s29))*(1+V(s45))*(1-V(s48)),2)}
+.func fa123() = {V(a123)*pow((1+V(s29))*(1-V(s45))*(1+V(s48)),2)}
+.func fa124() = {V(a124)*pow((1-V(s29))*(1+V(s45))*(1+V(s48)),2)}
+.func fa125() = {V(a125)*pow((1+V(s2))*(1+V(s19))*(1+V(s21)),2)}
+.func fa126() = {V(a126)*pow((1+V(s2))*(1-V(s19))*(1-V(s21)),2)}
+.func fa127() = {V(a127)*pow((1-V(s2))*(1+V(s19))*(1-V(s21)),2)}
+.func fa128() = {V(a128)*pow((1-V(s2))*(1-V(s19))*(1+V(s21)),2)}
+.func fa129() = {V(a129)*pow((1+V(s17))*(1+V(s36))*(1+V(s39)),2)}
+.func fa130() = {V(a130)*pow((1+V(s17))*(1-V(s36))*(1-V(s39)),2)}
+.func fa131() = {V(a131)*pow((1-V(s17))*(1+V(s36))*(1-V(s39)),2)}
+.func fa132() = {V(a132)*pow((1-V(s17))*(1-V(s36))*(1+V(s39)),2)}
+.func fa133() = {V(a133)*pow((1-V(s22))*(1-V(s36))*(1-V(s19)),2)}
+.func fa134() = {V(a134)*pow((1+V(s22))*(1+V(s36))*(1-V(s19)),2)}
+.func fa135() = {V(a135)*pow((1+V(s22))*(1-V(s36))*(1+V(s19)),2)}
+.func fa136() = {V(a136)*pow((1-V(s22))*(1+V(s36))*(1+V(s19)),2)}
+.func fa137() = {V(a137)*pow((1-V(s13))*(1-V(s14))*(1-V(s34)),2)}
+.func fa138() = {V(a138)*pow((1+V(s13))*(1+V(s14))*(1-V(s34)),2)}
+.func fa139() = {V(a139)*pow((1+V(s13))*(1-V(s14))*(1+V(s34)),2)}
+.func fa140() = {V(a140)*pow((1-V(s13))*(1+V(s14))*(1+V(s34)),2)}
+.func fa141() = {V(a141)*pow((1+V(s29))*(1+V(s40))*(1+V(s41)),2)}
+.func fa142() = {V(a142)*pow((1+V(s29))*(1-V(s40))*(1-V(s41)),2)}
+.func fa143() = {V(a143)*pow((1-V(s29))*(1+V(s40))*(1-V(s41)),2)}
+.func fa144() = {V(a144)*pow((1-V(s29))*(1-V(s40))*(1+V(s41)),2)}
+.func fa145() = {V(a145)*pow((1-V(s1))*(1-V(s16))*(1-V(s44)),2)}
+.func fa146() = {V(a146)*pow((1+V(s1))*(1+V(s16))*(1-V(s44)),2)}
+.func fa147() = {V(a147)*pow((1+V(s1))*(1-V(s16))*(1+V(s44)),2)}
+.func fa148() = {V(a148)*pow((1-V(s1))*(1+V(s16))*(1+V(s44)),2)}
+.func fa149() = {V(a149)*pow((1-V(s48))*(1-V(s49))*(1-V(s50)),2)}
+.func fa150() = {V(a150)*pow((1+V(s48))*(1+V(s49))*(1-V(s50)),2)}
+.func fa151() = {V(a151)*pow((1+V(s48))*(1-V(s49))*(1+V(s50)),2)}
+.func fa152() = {V(a152)*pow((1-V(s48))*(1+V(s49))*(1+V(s50)),2)}
+.func fa153() = {V(a153)*pow((1+V(s12))*(1+V(s20))*(1+V(s31)),2)}
+.func fa154() = {V(a154)*pow((1+V(s12))*(1-V(s20))*(1-V(s31)),2)}
+.func fa155() = {V(a155)*pow((1-V(s12))*(1+V(s20))*(1-V(s31)),2)}
+.func fa156() = {V(a156)*pow((1-V(s12))*(1-V(s20))*(1+V(s31)),2)}
+.func fa157() = {V(a157)*pow((1+V(s7))*(1+V(s41))*(1+V(s46)),2)}
+.func fa158() = {V(a158)*pow((1+V(s7))*(1-V(s41))*(1-V(s46)),2)}
+.func fa159() = {V(a159)*pow((1-V(s7))*(1+V(s41))*(1-V(s46)),2)}
+.func fa160() = {V(a160)*pow((1-V(s7))*(1-V(s41))*(1+V(s46)),2)}
+.func fa161() = {V(a161)*pow((1+V(s9))*(1+V(s26))*(1+V(s40)),2)}
+.func fa162() = {V(a162)*pow((1+V(s9))*(1-V(s26))*(1-V(s40)),2)}
+.func fa163() = {V(a163)*pow((1-V(s9))*(1+V(s26))*(1-V(s40)),2)}
+.func fa164() = {V(a164)*pow((1-V(s9))*(1-V(s26))*(1+V(s40)),2)}
+.func fa165() = {V(a165)*pow((1+V(s1))*(1+V(s7))*(1+V(s32)),2)}
+.func fa166() = {V(a166)*pow((1+V(s1))*(1-V(s7))*(1-V(s32)),2)}
+.func fa167() = {V(a167)*pow((1-V(s1))*(1+V(s7))*(1-V(s32)),2)}
+.func fa168() = {V(a168)*pow((1-V(s1))*(1-V(s7))*(1+V(s32)),2)}
+.func fa169() = {V(a169)*pow((1+V(s9))*(1+V(s13))*(1+V(s19)),2)}
+.func fa170() = {V(a170)*pow((1+V(s9))*(1-V(s13))*(1-V(s19)),2)}
+.func fa171() = {V(a171)*pow((1-V(s9))*(1+V(s13))*(1-V(s19)),2)}
+.func fa172() = {V(a172)*pow((1-V(s9))*(1-V(s13))*(1+V(s19)),2)}
+.func fa173() = {V(a173)*pow((1+V(s37))*(1+V(s16))*(1+V(s39)),2)}
+.func fa174() = {V(a174)*pow((1+V(s37))*(1-V(s16))*(1-V(s39)),2)}
+.func fa175() = {V(a175)*pow((1-V(s37))*(1+V(s16))*(1-V(s39)),2)}
+.func fa176() = {V(a176)*pow((1-V(s37))*(1-V(s16))*(1+V(s39)),2)}
+.func fa177() = {V(a177)*pow((1-V(s5))*(1-V(s6))*(1-V(s13)),2)}
+.func fa178() = {V(a178)*pow((1+V(s5))*(1+V(s6))*(1-V(s13)),2)}
+.func fa179() = {V(a179)*pow((1+V(s5))*(1-V(s6))*(1+V(s13)),2)}
+.func fa180() = {V(a180)*pow((1-V(s5))*(1+V(s6))*(1+V(s13)),2)}
+.func fa181() = {V(a181)*pow((1+V(s15))*(1+V(s42))*(1+V(s44)),2)}
+.func fa182() = {V(a182)*pow((1+V(s15))*(1-V(s42))*(1-V(s44)),2)}
+.func fa183() = {V(a183)*pow((1-V(s15))*(1+V(s42))*(1-V(s44)),2)}
+.func fa184() = {V(a184)*pow((1-V(s15))*(1-V(s42))*(1+V(s44)),2)}
+.func fa185() = {V(a185)*pow((1+V(s6))*(1+V(s35))*(1+V(s49)),2)}
+.func fa186() = {V(a186)*pow((1+V(s6))*(1-V(s35))*(1-V(s49)),2)}
+.func fa187() = {V(a187)*pow((1-V(s6))*(1+V(s35))*(1-V(s49)),2)}
+.func fa188() = {V(a188)*pow((1-V(s6))*(1-V(s35))*(1+V(s49)),2)}
+.func fa189() = {V(a189)*pow((1+V(s23))*(1+V(s33))*(1+V(s47)),2)}
+.func fa190() = {V(a190)*pow((1+V(s23))*(1-V(s33))*(1-V(s47)),2)}
+.func fa191() = {V(a191)*pow((1-V(s23))*(1+V(s33))*(1-V(s47)),2)}
+.func fa192() = {V(a192)*pow((1-V(s23))*(1-V(s33))*(1+V(s47)),2)}
+.func fa193() = {V(a193)*pow((1-V(s9))*(1-V(s14))*(1-V(s20)),2)}
+.func fa194() = {V(a194)*pow((1+V(s9))*(1+V(s14))*(1-V(s20)),2)}
+.func fa195() = {V(a195)*pow((1+V(s9))*(1-V(s14))*(1+V(s20)),2)}
+.func fa196() = {V(a196)*pow((1-V(s9))*(1+V(s14))*(1+V(s20)),2)}
+.func fa197() = {V(a197)*pow((1-V(s7))*(1-V(s8))*(1-V(s15)),2)}
+.func fa198() = {V(a198)*pow((1+V(s7))*(1+V(s8))*(1-V(s15)),2)}
+.func fa199() = {V(a199)*pow((1+V(s7))*(1-V(s8))*(1+V(s15)),2)}
+.func fa200() = {V(a200)*pow((1-V(s7))*(1+V(s8))*(1+V(s15)),2)}
+
+
+.tran 0 300.000000 1u uic
+
+.probe V(contra) V(contrd) V(s1) V(s2) V(s3) V(s4) V(s5) V(s6) V(s7) V(s8) V(s9) V(s10) V(s11) V(s12) V(s13) V(s14) V(s15) V(s16) V(s17) V(s18) V(s19) V(s20) V(s21) V(s22) V(s23) V(s24) V(s25) V(s26) V(s27) V(s28) V(s29) V(s30) V(s31) V(s32) V(s33) V(s34) V(s35) V(s36) V(s37) V(s38) V(s39) V(s40) V(s41) V(s42) V(s43) V(s44) V(s45) V(s46) V(s47) V(s48) V(s49) V(s50)
