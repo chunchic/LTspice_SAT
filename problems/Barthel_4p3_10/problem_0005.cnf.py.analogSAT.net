@@ -1,0 +1,236 @@
+* Control circuit
+ESAT1 contra 0 value={fsat1()}
+RSAT1 contra 0 100meg
+ESAT2 contrd 0 value={fsat2()}
+RSAT2 contrd 0 100meg
+
+* Main variables
+Cs1 s1 0 1 IC={-1+mc(1,1)}
+Gs1 0 s1 value={fs1()}
+Rs1 s1 0 100meg
+Cs2 s2 0 1 IC={-1+mc(1,1)}
+Gs2 0 s2 value={fs2()}
+Rs2 s2 0 100meg
+Cs3 s3 0 1 IC={-1+mc(1,1)}
+Gs3 0 s3 value={fs3()}
+Rs3 s3 0 100meg
+Cs4 s4 0 1 IC={-1+mc(1,1)}
+Gs4 0 s4 value={fs4()}
+Rs4 s4 0 100meg
+Cs5 s5 0 1 IC={-1+mc(1,1)}
+Gs5 0 s5 value={fs5()}
+Rs5 s5 0 100meg
+Cs6 s6 0 1 IC={-1+mc(1,1)}
+Gs6 0 s6 value={fs6()}
+Rs6 s6 0 100meg
+Cs7 s7 0 1 IC={-1+mc(1,1)}
+Gs7 0 s7 value={fs7()}
+Rs7 s7 0 100meg
+Cs8 s8 0 1 IC={-1+mc(1,1)}
+Gs8 0 s8 value={fs8()}
+Rs8 s8 0 100meg
+Cs9 s9 0 1 IC={-1+mc(1,1)}
+Gs9 0 s9 value={fs9()}
+Rs9 s9 0 100meg
+Cs10 s10 0 1 IC={-1+mc(1,1)}
+Gs10 0 s10 value={fs10()}
+Rs10 s10 0 100meg
+
+* Memory variables
+Ca1 a1 0 1 IC={1}
+Ga1 0 a1 value={fa1()}
+Ra1 a1 0 100meg
+Ca2 a2 0 1 IC={1}
+Ga2 0 a2 value={fa2()}
+Ra2 a2 0 100meg
+Ca3 a3 0 1 IC={1}
+Ga3 0 a3 value={fa3()}
+Ra3 a3 0 100meg
+Ca4 a4 0 1 IC={1}
+Ga4 0 a4 value={fa4()}
+Ra4 a4 0 100meg
+Ca5 a5 0 1 IC={1}
+Ga5 0 a5 value={fa5()}
+Ra5 a5 0 100meg
+Ca6 a6 0 1 IC={1}
+Ga6 0 a6 value={fa6()}
+Ra6 a6 0 100meg
+Ca7 a7 0 1 IC={1}
+Ga7 0 a7 value={fa7()}
+Ra7 a7 0 100meg
+Ca8 a8 0 1 IC={1}
+Ga8 0 a8 value={fa8()}
+Ra8 a8 0 100meg
+Ca9 a9 0 1 IC={1}
+Ga9 0 a9 value={fa9()}
+Ra9 a9 0 100meg
+Ca10 a10 0 1 IC={1}
+Ga10 0 a10 value={fa10()}
+Ra10 a10 0 100meg
+Ca11 a11 0 1 IC={1}
+Ga11 0 a11 value={fa11()}
+Ra11 a11 0 100meg
+Ca12 a12 0 1 IC={1}
+Ga12 0 a12 value={fa12()}
+Ra12 a12 0 100meg
+Ca13 a13 0 1 IC={1}
+Ga13 0 a13 value={fa13()}
+Ra13 a13 0 100meg
+Ca14 a14 0 1 IC={1}
+Ga14 0 a14 value={fa14()}
+Ra14 a14 0 100meg
+Ca15 a15 0 1 IC={1}
+Ga15 0 a15 value={fa15()}
+Ra15 a15 0 100meg
+Ca16 a16 0 1 IC={1}
+Ga16 0 a16 value={fa16()}
+Ra16 a16 0 100meg
+Ca17 a17 0 1 IC={1}
+Ga17 0 a17 value={fa17()}
+Ra17 a17 0 100meg
+Ca18 a18 0 1 IC={1}
+Ga18 0 a18 value={fa18()}
+Ra18 a18 0 100meg
+Ca19 a19 0 1 IC={1}
+Ga19 0 a19 value={fa19()}
+Ra19 a19 0 100meg
+Ca20 a20 0 1 IC={1}
+Ga20 0 a20 value={fa20()}
+Ra20 a20 0 100meg
+Ca21 a21 0 1 IC={1}
+Ga21 0 a21 value={fa21()}
+Ra21 a21 0 100meg
+Ca22 a22 0 1 IC={1}
+Ga22 0 a22 value={fa22()}
+Ra22 a22 0 100meg
+Ca23 a23 0 1 IC={1}
+Ga23 0 a23 value={fa23()}
+Ra23 a23 0 100meg
+Ca24 a24 0 1 IC={1}
+Ga24 0 a24 value={fa24()}
+Ra24 a24 0 100meg
+Ca25 a25 0 1 IC={1}
+Ga25 0 a25 value={fa25()}
+Ra25 a25 0 100meg
+Ca26 a26 0 1 IC={1}
+Ga26 0 a26 value={fa26()}
+Ra26 a26 0 100meg
+Ca27 a27 0 1 IC={1}
+Ga27 0 a27 value={fa27()}
+Ra27 a27 0 100meg
+Ca28 a28 0 1 IC={1}
+Ga28 0 a28 value={fa28()}
+Ra28 a28 0 100meg
+Ca29 a29 0 1 IC={1}
+Ga29 0 a29 value={fa29()}
+Ra29 a29 0 100meg
+Ca30 a30 0 1 IC={1}
+Ga30 0 a30 value={fa30()}
+Ra30 a30 0 100meg
+Ca31 a31 0 1 IC={1}
+Ga31 0 a31 value={fa31()}
+Ra31 a31 0 100meg
+Ca32 a32 0 1 IC={1}
+Ga32 0 a32 value={fa32()}
+Ra32 a32 0 100meg
+Ca33 a33 0 1 IC={1}
+Ga33 0 a33 value={fa33()}
+Ra33 a33 0 100meg
+Ca34 a34 0 1 IC={1}
+Ga34 0 a34 value={fa34()}
+Ra34 a34 0 100meg
+Ca35 a35 0 1 IC={1}
+Ga35 0 a35 value={fa35()}
+Ra35 a35 0 100meg
+Ca36 a36 0 1 IC={1}
+Ga36 0 a36 value={fa36()}
+Ra36 a36 0 100meg
+Ca37 a37 0 1 IC={1}
+Ga37 0 a37 value={fa37()}
+Ra37 a37 0 100meg
+Ca38 a38 0 1 IC={1}
+Ga38 0 a38 value={fa38()}
+Ra38 a38 0 100meg
+Ca39 a39 0 1 IC={1}
+Ga39 0 a39 value={fa39()}
+Ra39 a39 0 100meg
+Ca40 a40 0 1 IC={1}
+Ga40 0 a40 value={fa40()}
+Ra40 a40 0 100meg
+Ca41 a41 0 1 IC={1}
+Ga41 0 a41 value={fa41()}
+Ra41 a41 0 100meg
+Ca42 a42 0 1 IC={1}
+Ga42 0 a42 value={fa42()}
+Ra42 a42 0 100meg
+Ca43 a43 0 1 IC={1}
+Ga43 0 a43 value={fa43()}
+Ra43 a43 0 100meg
+
+* functions
+.func Cm(x,y,z)={0.5*min(1-x,min(1-y,1-z))}
+.func Cm1(x,y,z)={min(1-u(x),min(1-u(y),1-u(z)))}
+
+.func fsat1()=Cm(V(s6),V(s10),-V(s7))+Cm(-V(s10),-V(s8),V(s2))+Cm(-V(s2),V(s6),-V(s10))+Cm(V(s8),-V(s1),V(s6))+Cm(V(s8),V(s2),V(s5))+Cm(V(s1),-V(s6),-V(s8))+Cm(V(s6),-V(s8),V(s1))+Cm(-V(s9),V(s3),V(s7))+Cm(-V(s5),V(s9),V(s2))+Cm(-V(s3),V(s1),-V(s5))+Cm(-V(s6),-V(s3),-V(s8))+Cm(V(s2),V(s10),V(s1))+Cm(V(s1),-V(s9),V(s7))+Cm(V(s5),-V(s6),-V(s9))+Cm(-V(s9),-V(s4),-V(s5))+Cm(-V(s1),V(s3),-V(s9))+Cm(V(s1),V(s10),V(s5))+Cm(-V(s1),-V(s9),V(s8))+Cm(-V(s3),V(s7),V(s1))+Cm(-V(s4),V(s6),V(s1))+Cm(-V(s4),-V(s2),V(s9))+Cm(-V(s10),V(s4),V(s7))+Cm(V(s8),-V(s1),-V(s4))+Cm(-V(s10),V(s1),-V(s3))+Cm(-V(s3),V(s1),V(s7))+Cm(-V(s7),V(s5),V(s4))+Cm(V(s1),V(s8),V(s3))+Cm(V(s2),-V(s6),-V(s8))+Cm(-V(s6),V(s3),-V(s5))+Cm(V(s10),V(s9),-V(s4))+Cm(V(s3),V(s10),V(s2))+Cm(V(s5),V(s4),V(s8))+Cm(V(s7),V(s10),V(s3))+Cm(-V(s9),V(s6),-V(s5))+Cm(V(s3),-V(s2),-V(s9))+Cm(V(s10),V(s1),V(s6))+Cm(V(s2),V(s5),V(s4))+Cm(V(s3),V(s10),V(s2))+Cm(V(s1),-V(s3),-V(s5))+Cm(-V(s8),V(s4),-V(s3))+Cm(-V(s9),-V(s5),-V(s2))+Cm(-V(s5),-V(s1),V(s10))+Cm(V(s7),V(s1),-V(s9))
+
+.func fsat2()=Cm1(V(s6),V(s10),-V(s7))+Cm1(-V(s10),-V(s8),V(s2))+Cm1(-V(s2),V(s6),-V(s10))+Cm1(V(s8),-V(s1),V(s6))+Cm1(V(s8),V(s2),V(s5))+Cm1(V(s1),-V(s6),-V(s8))+Cm1(V(s6),-V(s8),V(s1))+Cm1(-V(s9),V(s3),V(s7))+Cm1(-V(s5),V(s9),V(s2))+Cm1(-V(s3),V(s1),-V(s5))+Cm1(-V(s6),-V(s3),-V(s8))+Cm1(V(s2),V(s10),V(s1))+Cm1(V(s1),-V(s9),V(s7))+Cm1(V(s5),-V(s6),-V(s9))+Cm1(-V(s9),-V(s4),-V(s5))+Cm1(-V(s1),V(s3),-V(s9))+Cm1(V(s1),V(s10),V(s5))+Cm1(-V(s1),-V(s9),V(s8))+Cm1(-V(s3),V(s7),V(s1))+Cm1(-V(s4),V(s6),V(s1))+Cm1(-V(s4),-V(s2),V(s9))+Cm1(-V(s10),V(s4),V(s7))+Cm1(V(s8),-V(s1),-V(s4))+Cm1(-V(s10),V(s1),-V(s3))+Cm1(-V(s3),V(s1),V(s7))+Cm1(-V(s7),V(s5),V(s4))+Cm1(V(s1),V(s8),V(s3))+Cm1(V(s2),-V(s6),-V(s8))+Cm1(-V(s6),V(s3),-V(s5))+Cm1(V(s10),V(s9),-V(s4))+Cm1(V(s3),V(s10),V(s2))+Cm1(V(s5),V(s4),V(s8))+Cm1(V(s7),V(s10),V(s3))+Cm1(-V(s9),V(s6),-V(s5))+Cm1(V(s3),-V(s2),-V(s9))+Cm1(V(s10),V(s1),V(s6))+Cm1(V(s2),V(s5),V(s4))+Cm1(V(s3),V(s10),V(s2))+Cm1(V(s1),-V(s3),-V(s5))+Cm1(-V(s8),V(s4),-V(s3))+Cm1(-V(s9),-V(s5),-V(s2))+Cm1(-V(s5),-V(s1),V(s10))+Cm1(V(s7),V(s1),-V(s9))
+
+.func fs1() = {2*V(a4)*(-1)*pow(1-V(s8),2)*pow(1+V(s1),1)*pow(1-V(s6),2)+2*V(a6)*(1)*pow(1-V(s1),1)*pow(1+V(s6),2)*pow(1+V(s8),2)+2*V(a7)*(1)*pow(1-V(s6),2)*pow(1+V(s8),2)*pow(1-V(s1),1)+2*V(a10)*(1)*pow(1+V(s3),2)*pow(1-V(s1),1)*pow(1+V(s5),2)+2*V(a12)*(1)*pow(1-V(s2),2)*pow(1-V(s10),2)*pow(1-V(s1),1)+2*V(a13)*(1)*pow(1-V(s1),1)*pow(1+V(s9),2)*pow(1-V(s7),2)+2*V(a16)*(-1)*pow(1+V(s1),1)*pow(1-V(s3),2)*pow(1+V(s9),2)+2*V(a17)*(1)*pow(1-V(s1),1)*pow(1-V(s10),2)*pow(1-V(s5),2)+2*V(a18)*(-1)*pow(1+V(s1),1)*pow(1+V(s9),2)*pow(1-V(s8),2)+2*V(a19)*(1)*pow(1+V(s3),2)*pow(1-V(s7),2)*pow(1-V(s1),1)+2*V(a20)*(1)*pow(1+V(s4),2)*pow(1-V(s6),2)*pow(1-V(s1),1)+2*V(a23)*(-1)*pow(1-V(s8),2)*pow(1+V(s1),1)*pow(1+V(s4),2)+2*V(a24)*(1)*pow(1+V(s10),2)*pow(1-V(s1),1)*pow(1+V(s3),2)+2*V(a25)*(1)*pow(1+V(s3),2)*pow(1-V(s1),1)*pow(1-V(s7),2)+2*V(a27)*(1)*pow(1-V(s1),1)*pow(1-V(s8),2)*pow(1-V(s3),2)+2*V(a36)*(1)*pow(1-V(s10),2)*pow(1-V(s1),1)*pow(1-V(s6),2)+2*V(a39)*(1)*pow(1-V(s1),1)*pow(1+V(s3),2)*pow(1+V(s5),2)+2*V(a42)*(-1)*pow(1+V(s5),2)*pow(1+V(s1),1)*pow(1-V(s10),2)+2*V(a43)*(1)*pow(1-V(s7),2)*pow(1-V(s1),1)*pow(1+V(s9),2)}
+.func fs2() = {2*V(a2)*(1)*pow(1+V(s10),2)*pow(1+V(s8),2)*pow(1-V(s2),1)+2*V(a3)*(-1)*pow(1+V(s2),1)*pow(1-V(s6),2)*pow(1+V(s10),2)+2*V(a5)*(1)*pow(1-V(s8),2)*pow(1-V(s2),1)*pow(1-V(s5),2)+2*V(a9)*(1)*pow(1+V(s5),2)*pow(1-V(s9),2)*pow(1-V(s2),1)+2*V(a12)*(1)*pow(1-V(s2),1)*pow(1-V(s10),2)*pow(1-V(s1),2)+2*V(a21)*(-1)*pow(1+V(s4),2)*pow(1+V(s2),1)*pow(1-V(s9),2)+2*V(a28)*(1)*pow(1-V(s2),1)*pow(1+V(s6),2)*pow(1+V(s8),2)+2*V(a31)*(1)*pow(1-V(s3),2)*pow(1-V(s10),2)*pow(1-V(s2),1)+2*V(a35)*(-1)*pow(1-V(s3),2)*pow(1+V(s2),1)*pow(1+V(s9),2)+2*V(a37)*(1)*pow(1-V(s2),1)*pow(1-V(s5),2)*pow(1-V(s4),2)+2*V(a38)*(1)*pow(1-V(s3),2)*pow(1-V(s10),2)*pow(1-V(s2),1)+2*V(a41)*(-1)*pow(1+V(s9),2)*pow(1+V(s5),2)*pow(1+V(s2),1)}
+.func fs3() = {2*V(a8)*(1)*pow(1+V(s9),2)*pow(1-V(s3),1)*pow(1-V(s7),2)+2*V(a10)*(-1)*pow(1+V(s3),1)*pow(1-V(s1),2)*pow(1+V(s5),2)+2*V(a11)*(-1)*pow(1+V(s6),2)*pow(1+V(s3),1)*pow(1+V(s8),2)+2*V(a16)*(1)*pow(1+V(s1),2)*pow(1-V(s3),1)*pow(1+V(s9),2)+2*V(a19)*(-1)*pow(1+V(s3),1)*pow(1-V(s7),2)*pow(1-V(s1),2)+2*V(a24)*(-1)*pow(1+V(s10),2)*pow(1-V(s1),2)*pow(1+V(s3),1)+2*V(a25)*(-1)*pow(1+V(s3),1)*pow(1-V(s1),2)*pow(1-V(s7),2)+2*V(a27)*(1)*pow(1-V(s1),2)*pow(1-V(s8),2)*pow(1-V(s3),1)+2*V(a29)*(1)*pow(1+V(s6),2)*pow(1-V(s3),1)*pow(1+V(s5),2)+2*V(a31)*(1)*pow(1-V(s3),1)*pow(1-V(s10),2)*pow(1-V(s2),2)+2*V(a33)*(1)*pow(1-V(s7),2)*pow(1-V(s10),2)*pow(1-V(s3),1)+2*V(a35)*(1)*pow(1-V(s3),1)*pow(1+V(s2),2)*pow(1+V(s9),2)+2*V(a38)*(1)*pow(1-V(s3),1)*pow(1-V(s10),2)*pow(1-V(s2),2)+2*V(a39)*(-1)*pow(1-V(s1),2)*pow(1+V(s3),1)*pow(1+V(s5),2)+2*V(a40)*(-1)*pow(1+V(s8),2)*pow(1-V(s4),2)*pow(1+V(s3),1)}
+.func fs4() = {2*V(a15)*(-1)*pow(1+V(s9),2)*pow(1+V(s4),1)*pow(1+V(s5),2)+2*V(a20)*(-1)*pow(1+V(s4),1)*pow(1-V(s6),2)*pow(1-V(s1),2)+2*V(a21)*(-1)*pow(1+V(s4),1)*pow(1+V(s2),2)*pow(1-V(s9),2)+2*V(a22)*(1)*pow(1+V(s10),2)*pow(1-V(s4),1)*pow(1-V(s7),2)+2*V(a23)*(-1)*pow(1-V(s8),2)*pow(1+V(s1),2)*pow(1+V(s4),1)+2*V(a26)*(1)*pow(1+V(s7),2)*pow(1-V(s5),2)*pow(1-V(s4),1)+2*V(a30)*(-1)*pow(1-V(s10),2)*pow(1-V(s9),2)*pow(1+V(s4),1)+2*V(a32)*(1)*pow(1-V(s5),2)*pow(1-V(s4),1)*pow(1-V(s8),2)+2*V(a37)*(1)*pow(1-V(s2),2)*pow(1-V(s5),2)*pow(1-V(s4),1)+2*V(a40)*(1)*pow(1+V(s8),2)*pow(1-V(s4),1)*pow(1+V(s3),2)}
+.func fs5() = {2*V(a5)*(1)*pow(1-V(s8),2)*pow(1-V(s2),2)*pow(1-V(s5),1)+2*V(a9)*(-1)*pow(1+V(s5),1)*pow(1-V(s9),2)*pow(1-V(s2),2)+2*V(a10)*(-1)*pow(1+V(s3),2)*pow(1-V(s1),2)*pow(1+V(s5),1)+2*V(a14)*(1)*pow(1-V(s5),1)*pow(1+V(s6),2)*pow(1+V(s9),2)+2*V(a15)*(-1)*pow(1+V(s9),2)*pow(1+V(s4),2)*pow(1+V(s5),1)+2*V(a17)*(1)*pow(1-V(s1),2)*pow(1-V(s10),2)*pow(1-V(s5),1)+2*V(a26)*(1)*pow(1+V(s7),2)*pow(1-V(s5),1)*pow(1-V(s4),2)+2*V(a29)*(-1)*pow(1+V(s6),2)*pow(1-V(s3),2)*pow(1+V(s5),1)+2*V(a32)*(1)*pow(1-V(s5),1)*pow(1-V(s4),2)*pow(1-V(s8),2)+2*V(a34)*(-1)*pow(1+V(s9),2)*pow(1-V(s6),2)*pow(1+V(s5),1)+2*V(a37)*(1)*pow(1-V(s2),2)*pow(1-V(s5),1)*pow(1-V(s4),2)+2*V(a39)*(-1)*pow(1-V(s1),2)*pow(1+V(s3),2)*pow(1+V(s5),1)+2*V(a41)*(-1)*pow(1+V(s9),2)*pow(1+V(s5),1)*pow(1+V(s2),2)+2*V(a42)*(-1)*pow(1+V(s5),1)*pow(1+V(s1),2)*pow(1-V(s10),2)}
+.func fs6() = {2*V(a1)*(1)*pow(1-V(s6),1)*pow(1-V(s10),2)*pow(1+V(s7),2)+2*V(a3)*(1)*pow(1+V(s2),2)*pow(1-V(s6),1)*pow(1+V(s10),2)+2*V(a4)*(1)*pow(1-V(s8),2)*pow(1+V(s1),2)*pow(1-V(s6),1)+2*V(a6)*(-1)*pow(1-V(s1),2)*pow(1+V(s6),1)*pow(1+V(s8),2)+2*V(a7)*(1)*pow(1-V(s6),1)*pow(1+V(s8),2)*pow(1-V(s1),2)+2*V(a11)*(-1)*pow(1+V(s6),1)*pow(1+V(s3),2)*pow(1+V(s8),2)+2*V(a14)*(-1)*pow(1-V(s5),2)*pow(1+V(s6),1)*pow(1+V(s9),2)+2*V(a20)*(1)*pow(1+V(s4),2)*pow(1-V(s6),1)*pow(1-V(s1),2)+2*V(a28)*(-1)*pow(1-V(s2),2)*pow(1+V(s6),1)*pow(1+V(s8),2)+2*V(a29)*(-1)*pow(1+V(s6),1)*pow(1-V(s3),2)*pow(1+V(s5),2)+2*V(a34)*(1)*pow(1+V(s9),2)*pow(1-V(s6),1)*pow(1+V(s5),2)+2*V(a36)*(1)*pow(1-V(s10),2)*pow(1-V(s1),2)*pow(1-V(s6),1)}
+.func fs7() = {2*V(a1)*(-1)*pow(1-V(s6),2)*pow(1-V(s10),2)*pow(1+V(s7),1)+2*V(a8)*(1)*pow(1+V(s9),2)*pow(1-V(s3),2)*pow(1-V(s7),1)+2*V(a13)*(1)*pow(1-V(s1),2)*pow(1+V(s9),2)*pow(1-V(s7),1)+2*V(a19)*(1)*pow(1+V(s3),2)*pow(1-V(s7),1)*pow(1-V(s1),2)+2*V(a22)*(1)*pow(1+V(s10),2)*pow(1-V(s4),2)*pow(1-V(s7),1)+2*V(a25)*(1)*pow(1+V(s3),2)*pow(1-V(s1),2)*pow(1-V(s7),1)+2*V(a26)*(-1)*pow(1+V(s7),1)*pow(1-V(s5),2)*pow(1-V(s4),2)+2*V(a33)*(1)*pow(1-V(s7),1)*pow(1-V(s10),2)*pow(1-V(s3),2)+2*V(a43)*(1)*pow(1-V(s7),1)*pow(1-V(s1),2)*pow(1+V(s9),2)}
+.func fs8() = {2*V(a2)*(-1)*pow(1+V(s10),2)*pow(1+V(s8),1)*pow(1-V(s2),2)+2*V(a4)*(1)*pow(1-V(s8),1)*pow(1+V(s1),2)*pow(1-V(s6),2)+2*V(a5)*(1)*pow(1-V(s8),1)*pow(1-V(s2),2)*pow(1-V(s5),2)+2*V(a6)*(-1)*pow(1-V(s1),2)*pow(1+V(s6),2)*pow(1+V(s8),1)+2*V(a7)*(-1)*pow(1-V(s6),2)*pow(1+V(s8),1)*pow(1-V(s1),2)+2*V(a11)*(-1)*pow(1+V(s6),2)*pow(1+V(s3),2)*pow(1+V(s8),1)+2*V(a18)*(1)*pow(1+V(s1),2)*pow(1+V(s9),2)*pow(1-V(s8),1)+2*V(a23)*(1)*pow(1-V(s8),1)*pow(1+V(s1),2)*pow(1+V(s4),2)+2*V(a27)*(1)*pow(1-V(s1),2)*pow(1-V(s8),1)*pow(1-V(s3),2)+2*V(a28)*(-1)*pow(1-V(s2),2)*pow(1+V(s6),2)*pow(1+V(s8),1)+2*V(a32)*(1)*pow(1-V(s5),2)*pow(1-V(s4),2)*pow(1-V(s8),1)+2*V(a40)*(-1)*pow(1+V(s8),1)*pow(1-V(s4),2)*pow(1+V(s3),2)}
+.func fs9() = {2*V(a8)*(-1)*pow(1+V(s9),1)*pow(1-V(s3),2)*pow(1-V(s7),2)+2*V(a9)*(1)*pow(1+V(s5),2)*pow(1-V(s9),1)*pow(1-V(s2),2)+2*V(a13)*(-1)*pow(1-V(s1),2)*pow(1+V(s9),1)*pow(1-V(s7),2)+2*V(a14)*(-1)*pow(1-V(s5),2)*pow(1+V(s6),2)*pow(1+V(s9),1)+2*V(a15)*(-1)*pow(1+V(s9),1)*pow(1+V(s4),2)*pow(1+V(s5),2)+2*V(a16)*(-1)*pow(1+V(s1),2)*pow(1-V(s3),2)*pow(1+V(s9),1)+2*V(a18)*(-1)*pow(1+V(s1),2)*pow(1+V(s9),1)*pow(1-V(s8),2)+2*V(a21)*(1)*pow(1+V(s4),2)*pow(1+V(s2),2)*pow(1-V(s9),1)+2*V(a30)*(1)*pow(1-V(s10),2)*pow(1-V(s9),1)*pow(1+V(s4),2)+2*V(a34)*(-1)*pow(1+V(s9),1)*pow(1-V(s6),2)*pow(1+V(s5),2)+2*V(a35)*(-1)*pow(1-V(s3),2)*pow(1+V(s2),2)*pow(1+V(s9),1)+2*V(a41)*(-1)*pow(1+V(s9),1)*pow(1+V(s5),2)*pow(1+V(s2),2)+2*V(a43)*(-1)*pow(1-V(s7),2)*pow(1-V(s1),2)*pow(1+V(s9),1)}
+.func fs10() = {2*V(a1)*(1)*pow(1-V(s6),2)*pow(1-V(s10),1)*pow(1+V(s7),2)+2*V(a2)*(-1)*pow(1+V(s10),1)*pow(1+V(s8),2)*pow(1-V(s2),2)+2*V(a3)*(-1)*pow(1+V(s2),2)*pow(1-V(s6),2)*pow(1+V(s10),1)+2*V(a12)*(1)*pow(1-V(s2),2)*pow(1-V(s10),1)*pow(1-V(s1),2)+2*V(a17)*(1)*pow(1-V(s1),2)*pow(1-V(s10),1)*pow(1-V(s5),2)+2*V(a22)*(-1)*pow(1+V(s10),1)*pow(1-V(s4),2)*pow(1-V(s7),2)+2*V(a24)*(-1)*pow(1+V(s10),1)*pow(1-V(s1),2)*pow(1+V(s3),2)+2*V(a30)*(1)*pow(1-V(s10),1)*pow(1-V(s9),2)*pow(1+V(s4),2)+2*V(a31)*(1)*pow(1-V(s3),2)*pow(1-V(s10),1)*pow(1-V(s2),2)+2*V(a33)*(1)*pow(1-V(s7),2)*pow(1-V(s10),1)*pow(1-V(s3),2)+2*V(a36)*(1)*pow(1-V(s10),1)*pow(1-V(s1),2)*pow(1-V(s6),2)+2*V(a38)*(1)*pow(1-V(s3),2)*pow(1-V(s10),1)*pow(1-V(s2),2)+2*V(a42)*(1)*pow(1+V(s5),2)*pow(1+V(s1),2)*pow(1-V(s10),1)}
+
+.func fa1() = {V(a1)*pow((1-V(s6))*(1-V(s10))*(1+V(s7)),2)}
+.func fa2() = {V(a2)*pow((1+V(s10))*(1+V(s8))*(1-V(s2)),2)}
+.func fa3() = {V(a3)*pow((1+V(s2))*(1-V(s6))*(1+V(s10)),2)}
+.func fa4() = {V(a4)*pow((1-V(s8))*(1+V(s1))*(1-V(s6)),2)}
+.func fa5() = {V(a5)*pow((1-V(s8))*(1-V(s2))*(1-V(s5)),2)}
+.func fa6() = {V(a6)*pow((1-V(s1))*(1+V(s6))*(1+V(s8)),2)}
+.func fa7() = {V(a7)*pow((1-V(s6))*(1+V(s8))*(1-V(s1)),2)}
+.func fa8() = {V(a8)*pow((1+V(s9))*(1-V(s3))*(1-V(s7)),2)}
+.func fa9() = {V(a9)*pow((1+V(s5))*(1-V(s9))*(1-V(s2)),2)}
+.func fa10() = {V(a10)*pow((1+V(s3))*(1-V(s1))*(1+V(s5)),2)}
+.func fa11() = {V(a11)*pow((1+V(s6))*(1+V(s3))*(1+V(s8)),2)}
+.func fa12() = {V(a12)*pow((1-V(s2))*(1-V(s10))*(1-V(s1)),2)}
+.func fa13() = {V(a13)*pow((1-V(s1))*(1+V(s9))*(1-V(s7)),2)}
+.func fa14() = {V(a14)*pow((1-V(s5))*(1+V(s6))*(1+V(s9)),2)}
+.func fa15() = {V(a15)*pow((1+V(s9))*(1+V(s4))*(1+V(s5)),2)}
+.func fa16() = {V(a16)*pow((1+V(s1))*(1-V(s3))*(1+V(s9)),2)}
+.func fa17() = {V(a17)*pow((1-V(s1))*(1-V(s10))*(1-V(s5)),2)}
+.func fa18() = {V(a18)*pow((1+V(s1))*(1+V(s9))*(1-V(s8)),2)}
+.func fa19() = {V(a19)*pow((1+V(s3))*(1-V(s7))*(1-V(s1)),2)}
+.func fa20() = {V(a20)*pow((1+V(s4))*(1-V(s6))*(1-V(s1)),2)}
+.func fa21() = {V(a21)*pow((1+V(s4))*(1+V(s2))*(1-V(s9)),2)}
+.func fa22() = {V(a22)*pow((1+V(s10))*(1-V(s4))*(1-V(s7)),2)}
+.func fa23() = {V(a23)*pow((1-V(s8))*(1+V(s1))*(1+V(s4)),2)}
+.func fa24() = {V(a24)*pow((1+V(s10))*(1-V(s1))*(1+V(s3)),2)}
+.func fa25() = {V(a25)*pow((1+V(s3))*(1-V(s1))*(1-V(s7)),2)}
+.func fa26() = {V(a26)*pow((1+V(s7))*(1-V(s5))*(1-V(s4)),2)}
+.func fa27() = {V(a27)*pow((1-V(s1))*(1-V(s8))*(1-V(s3)),2)}
+.func fa28() = {V(a28)*pow((1-V(s2))*(1+V(s6))*(1+V(s8)),2)}
+.func fa29() = {V(a29)*pow((1+V(s6))*(1-V(s3))*(1+V(s5)),2)}
+.func fa30() = {V(a30)*pow((1-V(s10))*(1-V(s9))*(1+V(s4)),2)}
+.func fa31() = {V(a31)*pow((1-V(s3))*(1-V(s10))*(1-V(s2)),2)}
+.func fa32() = {V(a32)*pow((1-V(s5))*(1-V(s4))*(1-V(s8)),2)}
+.func fa33() = {V(a33)*pow((1-V(s7))*(1-V(s10))*(1-V(s3)),2)}
+.func fa34() = {V(a34)*pow((1+V(s9))*(1-V(s6))*(1+V(s5)),2)}
+.func fa35() = {V(a35)*pow((1-V(s3))*(1+V(s2))*(1+V(s9)),2)}
+.func fa36() = {V(a36)*pow((1-V(s10))*(1-V(s1))*(1-V(s6)),2)}
+.func fa37() = {V(a37)*pow((1-V(s2))*(1-V(s5))*(1-V(s4)),2)}
+.func fa38() = {V(a38)*pow((1-V(s3))*(1-V(s10))*(1-V(s2)),2)}
+.func fa39() = {V(a39)*pow((1-V(s1))*(1+V(s3))*(1+V(s5)),2)}
+.func fa40() = {V(a40)*pow((1+V(s8))*(1-V(s4))*(1+V(s3)),2)}
+.func fa41() = {V(a41)*pow((1+V(s9))*(1+V(s5))*(1+V(s2)),2)}
+.func fa42() = {V(a42)*pow((1+V(s5))*(1+V(s1))*(1-V(s10)),2)}
+.func fa43() = {V(a43)*pow((1-V(s7))*(1-V(s1))*(1+V(s9)),2)}
+
+
+.tran 0 300.000000 1u uic
+
+.probe V(contra) V(contrd) V(s1) V(s2) V(s3) V(s4) V(s5) V(s6) V(s7) V(s8) V(s9) V(s10)
